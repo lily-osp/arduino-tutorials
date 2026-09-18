@@ -56,7 +56,8 @@ $$\text{OCR1A} = \left( \frac{f_{\text{CPU}}}{\text{Prescaler} \times f_{\text{t
 Jika kita memilih Prescaler **1024**:
 $$\text{OCR1A} = \left( \frac{16.000.000}{1024 \times 1} \right) - 1 = 15.625 - 1 = 15.624$$
 
-Karena angka $15.624 \le 65.535$ (muat dalam register 16-bit), prescaler 1024 adalah pilihan yang sempurna.
+Karena angka $15.624 \le 65.535$ (muat dalam register 16-bit), prescaler 1024 adalah konfigurasi yang tepat.
+
 
 ---
 

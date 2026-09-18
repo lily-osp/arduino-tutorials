@@ -132,7 +132,8 @@ Eksekusi Utama: ... [Tulis LCD] -------> [Lanjut Tulis LCD] ...
 ### Tiga Aturan Wajib Penulisan ISR:
 1. **Gunakan Keyword `volatile`**: Setiap variabel yang dibaca di dalam `loop()` dan diubah di dalam ISR wajib dideklarasikan dengan `volatile` agar compiler tidak menyimpannya di register CPU.
 2. **Sangat Singkat**: Jangan pernah melakukan operasi lambat di dalam ISR (larangan keras: `delay()`, `Serial.print()`, atau komunikasi I2C LCD).
-3. **Cukup Ubah Flag**: Di dalam ISR, cukup matikan aktuator krusial seketika dan setel variabel penanda (flag) agar FSM di `loop()` mengambil alih penanganan selanjutnya.
+3. **Cukup Ubah Flag**: Di dalam ISR, cukup matikan beban atau aktuator utama seketika dan setel variabel penanda (flag) agar FSM di `loop()` mengambil alih penanganan selanjutnya.
+
 
 ---
 

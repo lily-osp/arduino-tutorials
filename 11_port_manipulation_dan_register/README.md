@@ -120,4 +120,5 @@ Kecepatan Register   : 53.20x LEBIH CEPAT!
 Tekan Tombol di Pin D8 (PB0) untuk toggle LED D13 (PB5)
 ```
 
-Direct register manipulation memotong waktu eksekusi dari $\approx 3.3\ \mu\text{s}$ menjadi hanya $\approx 62.5\ \text{ns}$ per instruksi. Teknik ini sangat krusial saat menangani protokol komunikasi frekuensi tinggi (seperti bit-banging bus) atau pembangkit sinyal presisi.
+Direct register manipulation memotong waktu eksekusi dari $\approx 3.3\ \mu\text{s}$ menjadi $\approx 62.5\ \text{ns}$ per instruksi. Teknik ini diperlukan untuk menangani protokol komunikasi berkecepatan tinggi (seperti bit-banging bus) atau pembangkitan sinyal pulsa presisi.
+

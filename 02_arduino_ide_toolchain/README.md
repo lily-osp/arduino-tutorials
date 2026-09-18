@@ -152,9 +152,9 @@ Arduino IDE memanggil tool bernama **avrdude** (*AVR Downloader/Uploader*).
 
 ---
 
-## 6. Uji Coba: Program Blink Pertama
+## 6. Menjalankan Uji Kedip LED
 
-Mari kita pastikan seluruh instalasi berfungsi normal dengan mengunggah sketsa dasar untuk menyalakan LED built-in pada pin 13.
+Pastikan instalasi dan komunikasi serial berfungsi normal dengan mengunggah program kedip LED bawaan pada pin 13:
 
 ### 6.1 Kode Program
 Buka menu **File > Examples > 01.Basics > Blink**, atau salin kode berikut ke editor:
