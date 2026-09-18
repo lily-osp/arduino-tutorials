@@ -1,0 +1,73 @@
+# ==============================================================================
+# Arduino & Embedded Build Artifacts
+# ==============================================================================
+*.hex
+*.bin
+*.elf
+*.eep
+*.o
+*.a
+*.d
+*.s
+build/
+*.build/
+*.upload/
+*.test/
+
+# Arduino IDE 2.x temporary build directories
+.arduino-ide/
+
+# PlatformIO (jika sketsa dibuka via PlatformIO)
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# ==============================================================================
+# Editor & IDE Cache
+# ==============================================================================
+# VS Code
+.vscode/.ropeproject
+.vscode/*.log
+
+# JetBrains / CLion
+.idea/
+*.iml
+
+# Vim / Emacs
+*~
+*.swp
+*.swo
+*.swn
+.#*
+
+# ==============================================================================
+# Operating System Artifacts
+# ==============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ==============================================================================
+# Logs & Backup Files
+# ==============================================================================
+*.log
+*.bak
+*.orig
+*.tmp
+*.temp
