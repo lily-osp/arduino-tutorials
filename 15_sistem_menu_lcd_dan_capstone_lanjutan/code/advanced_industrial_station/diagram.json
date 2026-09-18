@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "author": "Azzar Budiyanto",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -160,
+      "left": 30,
+      "attrs": {
+        "pins": "i2c"
+      }
+    },
+    {
+      "type": "wokwi-relay-module",
+      "id": "relay1",
+      "top": -140,
+      "left": 310,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -40,
+      "left": 120,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -10,
+      "left": 120,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_menu",
+      "top": 80,
+      "left": -90,
+      "attrs": {
+        "color": "blue"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_select",
+      "top": 140,
+      "left": -90,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_estop",
+      "top": 200,
+      "left": -90,
+      "attrs": {
+        "color": "red"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "lcd1:VCC",
+      "uno:5V",
+      "red",
+      []
+    ],
+    [
+      "lcd1:GND",
+      "uno:GND.2",
+      "black",
+      []
+    ],
+    [
+      "lcd1:SDA",
+      "uno:A4",
+      "blue",
+      []
+    ],
+    [
+      "lcd1:SCL",
+      "uno:A5",
+      "yellow",
+      []
+    ],
+    [
+      "relay1:VCC",
+      "uno:5V",
+      "red",
+      []
+    ],
+    [
+      "relay1:GND",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "relay1:IN",
+      "uno:7",
+      "purple",
+      []
+    ],
+    [
+      "uno:6",
+      "r1:1",
+      "orange",
+      []
+    ],
+    [
+      "r1:2",
+      "led1:A",
+      "orange",
+      []
+    ],
+    [
+      "led1:C",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "uno:8",
+      "btn_menu:2.l",
+      "blue",
+      []
+    ],
+    [
+      "btn_menu:1.l",
+      "uno:GND.3",
+      "black",
+      []
+    ],
+    [
+      "uno:9",
+      "btn_select:2.l",
+      "green",
+      []
+    ],
+    [
+      "btn_select:1.l",
+      "uno:GND.3",
+      "black",
+      []
+    ],
+    [
+      "uno:2",
+      "btn_estop:2.l",
+      "red",
+      []
+    ],
+    [
+      "btn_estop:1.l",
+      "uno:GND.3",
+      "black",
+      []
+    ]
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "author": "Azzar Budiyanto",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -160,
+      "left": 30,
+      "attrs": {
+        "pins": "i2c"
+      }
+    },
+    {
+      "type": "wokwi-relay-module",
+      "id": "relay1",
+      "top": -140,
+      "left": 310,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -40,
+      "left": 140,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -10,
+      "left": 140,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_estop",
+      "top": 80,
+      "left": -90,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_start",
+      "top": 140,
+      "left": -90,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_reset",
+      "top": 200,
+      "left": -90,
+      "attrs": {
+        "color": "yellow"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "lcd1:VCC",
+      "uno:5V",
+      "red",
+      []
+    ],
+    [
+      "lcd1:GND",
+      "uno:GND.2",
+      "black",
+      []
+    ],
+    [
+      "lcd1:SDA",
+      "uno:A4",
+      "blue",
+      []
+    ],
+    [
+      "lcd1:SCL",
+      "uno:A5",
+      "yellow",
+      []
+    ],
+    [
+      "relay1:VCC",
+      "uno:5V",
+      "red",
+      []
+    ],
+    [
+      "relay1:GND",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "relay1:IN",
+      "uno:8",
+      "purple",
+      []
+    ],
+    [
+      "uno:7",
+      "r1:1",
+      "gold",
+      []
+    ],
+    [
+      "r1:2",
+      "led1:A",
+      "gold",
+      []
+    ],
+    [
+      "led1:C",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "uno:2",
+      "btn_estop:2.l",
+      "red",
+      []
+    ],
+    [
+      "btn_estop:1.l",
+      "uno:GND.3",
+      "black",
+      []
+    ],
+    [
+      "uno:3",
+      "btn_start:2.l",
+      "green",
+      []
+    ],
+    [
+      "btn_start:1.l",
+      "uno:GND.3",
+      "black",
+      []
+    ],
+    [
+      "uno:4",
+      "btn_reset:2.l",
+      "orange",
+      []
+    ],
+    [
+      "btn_reset:1.l",
+      "uno:GND.3",
+      "black",
+      []
+    ]
+  ]
+}

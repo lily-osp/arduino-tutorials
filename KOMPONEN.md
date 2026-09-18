@@ -105,6 +105,14 @@ Jika kamu belum memiliki komponen fisik, seluruh rangkaian dan program dapat dis
   * Membrane Keypad 4x4 dengan pemindaian matriks.
   * Emulasi pembacaan dan penulisan memori non-volatile EEPROM.
 
+* **Cara Cepat Menjalankan Simulasi di Wokwi Web**:
+  1. Buka proyek baru di [wokwi.com/arduino/new/uno](https://wokwi.com/arduino/new/uno).
+  2. Klik tab `diagram.json` di editor Wokwi (atau tekan `F1` pilih diagram.json).
+  3. Salin dan tempel isi file `diagram.json` dari folder modul praktikum. Sirkuit dan pengkabelan akan otomatis terangkai rapi di kanvas.
+  4. Salin isi kode dari file `.ino` modul ke tab `sketch.ino`.
+  5. Jika modul menggunakan LCD (lihat file `libraries.txt`), buka tab `Library Manager` di Wokwi dan tambahkan `LiquidCrystal I2C`.
+  6. Klik tombol **Play** untuk memulai simulasi interaktif.
+
 ---
 
 ## 4. Matriks Distribusi Komponen per Modul (Modul 01 - 18)
