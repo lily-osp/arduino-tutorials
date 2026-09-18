@@ -103,3 +103,8 @@ Buka sketch pada folder [`code/keypad_security_access_controller/keypad_security
 3. **Uji Perlindungan Brute-Force**:
    * Masukkan PIN yang salah sebanyak 3 kali berturut-turut.
    * Pada percobaan ketiga, sistem seketika membunyikan sirine alarm kencang dua nada bergantian, LED merah berkedip cepat (*strobo*), dan sistem terkunci total selama 30 detik.
+
+### Simulasi Interaktif Wokwi:
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 18: Keypad Security Access Controller](https://wokwi.com/projects/475526703149603841)
+* File diagram sirkuit dan kode program tersedia di direktori [code/keypad_security_access_controller/](code/keypad_security_access_controller/).
+

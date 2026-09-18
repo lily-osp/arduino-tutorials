@@ -127,13 +127,13 @@ Jika kamu belum memiliki komponen fisik, seluruh rangkaian dan program dapat dis
 | **Modul 06** (PWM & Dimmer) | Ya | Ya (1x) | Ya (2x) | - | - | - | - | Tidak ada | [Wokwi #475523980835133441](https://wokwi.com/projects/475523980835133441) |
 | **Modul 07** (Serial & LCD I2C) | Ya | - | Ya (2x) | - | Ya | - | - | `LiquidCrystal I2C` | [Wokwi #475524767366901761](https://wokwi.com/projects/475524767366901761) |
 | **Modul 08** (Kendali Relay 5V) | Ya | Ya (1x) | Ya (1x) | Ya | Ya | - | - | `LiquidCrystal I2C` | [Wokwi #475525208595155969](https://wokwi.com/projects/475525208595155969) |
-| **Modul 09** (Bus I2C & EEPROM) | Ya | Ya (1x) | Ya (2x) | Ya | Ya | - | - | `LiquidCrystal I2C` | [diagram.json](09_bus_i2c_dan_eeprom/code/eeprom_state_persistence/diagram.json) |
-| **Modul 10** (Capstone FSM & E-STOP) | Ya | Ya (1x) | Ya (3x) | Ya | Ya | - | - | `LiquidCrystal I2C` | [diagram.json](10_arsitektur_fsm_interrupt_capstone/code/smart_industrial_controller/diagram.json) |
-| **Modul 11** (Direct Port Register) | Ya | D13 | Ya (1x) | - | - | - | - | Tidak ada | [diagram.json](11_port_manipulation_dan_register/code/direct_port_benchmark/diagram.json) |
-| **Modul 12** (Timer1 CTC Interrupt) | Ya | D13 | - | Ya | - | - | - | Tidak ada | [diagram.json](12_timer_interrupt_dan_hardware_timers/code/timer1_precision_clock/diagram.json) |
-| **Modul 13** (Low Power & Watchdog) | Ya | D13 | Ya (1x) | Ya | - | - | - | Tidak ada | [diagram.json](13_low_power_dan_watchdog_timer/code/power_saving_wdt/diagram.json) |
-| **Modul 14** (Serial CLI Non-Blocking)| Ya | Ya (1x) | - | Ya | - | - | - | Tidak ada | [diagram.json](14_serial_cli_dan_command_parser/code/serial_cli_controller/diagram.json) |
-| **Modul 15** (Advanced Capstone Station)| Ya | Ya (1x) | Ya (3x) | Ya | Ya | - | - | `LiquidCrystal I2C` | [diagram.json](15_sistem_menu_lcd_dan_capstone_lanjutan/code/advanced_industrial_station/diagram.json) |
-| **Modul 16** (Frekuensi & Audio Buzzer)| Ya | Ya (1x) | Ya (1x) | - | - | Ya | - | Tidak ada | [diagram.json](16_pembangkit_frekuensi_dan_buzzer/code/buzzer_alarm_melody/diagram.json) |
-| **Modul 17** (Keypad Matriks 4x4) | Ya | D13 | - | - | Ya | - | Ya | `LiquidCrystal I2C` | [diagram.json](17_keypad_matriks_4x4_scanning/code/keypad_matrix_scanner/diagram.json) |
-| **Modul 18** (Sistem Keamanan PIN Access)| Ya | Ya (2x) | - | Ya | Ya | Ya | Ya | `LiquidCrystal I2C` | [diagram.json](18_sistem_keamanan_keypad_pin_access/code/keypad_security_access_controller/diagram.json) |
+| **Modul 09** (Bus I2C & EEPROM) | Ya | Ya (1x) | Ya (2x) | Ya | Ya | - | - | `LiquidCrystal I2C` | [Wokwi #475528078042644481](https://wokwi.com/projects/475528078042644481) |
+| **Modul 10** (Capstone FSM & E-STOP) | Ya | Ya (1x) | Ya (3x) | Ya | Ya | - | - | `LiquidCrystal I2C` | [Wokwi #475528015174211585](https://wokwi.com/projects/475528015174211585) |
+| **Modul 11** (Direct Port Register) | Ya | D13 | Ya (1x) | - | - | - | - | Tidak ada | [Wokwi #475527945535126529](https://wokwi.com/projects/475527945535126529) |
+| **Modul 12** (Timer1 CTC Interrupt) | Ya | D13 | - | Ya | - | - | - | Tidak ada | [Wokwi #475527882607971329](https://wokwi.com/projects/475527882607971329) |
+| **Modul 13** (Low Power & Watchdog) | Ya | D13 | Ya (1x) | Ya | - | - | - | Tidak ada | [Wokwi #475527819407142913](https://wokwi.com/projects/475527819407142913) |
+| **Modul 14** (Serial CLI Non-Blocking)| Ya | Ya (1x) | - | Ya | - | - | - | Tidak ada | [Wokwi #475527756542905345](https://wokwi.com/projects/475527756542905345) |
+| **Modul 15** (Advanced Capstone Station)| Ya | Ya (1x) | Ya (3x) | Ya | Ya | - | - | `LiquidCrystal I2C` | [Wokwi #475527677492851713](https://wokwi.com/projects/475527677492851713) |
+| **Modul 16** (Frekuensi & Audio Buzzer)| Ya | Ya (1x) | Ya (1x) | - | - | Ya | - | Tidak ada | [Wokwi #475527609724425217](https://wokwi.com/projects/475527609724425217) |
+| **Modul 17** (Keypad Matriks 4x4) | Ya | D13 | - | - | Ya | - | Ya | `LiquidCrystal I2C` | [Wokwi #475527542911249409](https://wokwi.com/projects/475527542911249409) |
+| **Modul 18** (Sistem Keamanan PIN Access)| Ya | Ya (2x) | - | Ya | Ya | Ya | Ya | `LiquidCrystal I2C` | [Wokwi #475526703149603841](https://wokwi.com/projects/475526703149603841) |

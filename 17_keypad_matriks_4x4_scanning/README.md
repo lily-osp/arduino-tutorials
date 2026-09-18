@@ -93,3 +93,8 @@ Buka sketch pada folder [`code/keypad_matrix_scanner/keypad_matrix_scanner.ino`]
 3. Buka **Serial Monitor** (115200 baud).
 4. Tekan tombol angka (0–9), tombol huruf (A–D), serta simbol (`*` dan `#`).
 5. Amati: setiap tombol yang ditekan terdeteksi seketika pada layar LCD dan Serial Monitor dengan indikator kedip LED onboard D13 tanpa membutuhkan library eksternal.
+
+### Simulasi Interaktif Wokwi:
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 17: Keypad Matrix Scanner](https://wokwi.com/projects/475527542911249409)
+* File diagram sirkuit dan kode program tersedia di direktori [code/keypad_matrix_scanner/](code/keypad_matrix_scanner/).
+

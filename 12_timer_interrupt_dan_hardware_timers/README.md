@@ -81,3 +81,8 @@ Buka sketch pada folder [`code/timer1_precision_clock/timer1_precision_clock.ino
 1. **Sangat Singkat**: Jangan pernah memanggil `delay()`, `Serial.print()` panjang, atau operasi lambat di dalam ISR.
 2. **Keyword `volatile`**: Semua variabel global yang diubah di dalam ISR wajib dideklarasikan dengan `volatile`.
 3. **Operasi Atomik**: Di program utama `loop()`, saat membaca variabel multi-byte (seperti `uint32_t`) yang terus diperbarui oleh ISR, nonaktifkan interupsi sesaat menggunakan `noInterrupts()` dan aktifkan kembali dengan `interrupts()` untuk mencegah nilai terpotong di tengah pembacaan.
+
+### Simulasi Interaktif Wokwi:
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 12: Timer1 Precision Clock](https://wokwi.com/projects/475527882607971329)
+* File diagram sirkuit dan kode program tersedia di direktori [code/timer1_precision_clock/](code/timer1_precision_clock/).
+

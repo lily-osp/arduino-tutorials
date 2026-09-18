@@ -122,3 +122,8 @@ Tekan Tombol di Pin D8 (PB0) untuk toggle LED D13 (PB5)
 
 Direct register manipulation memotong waktu eksekusi dari $\approx 3.3\ \mu\text{s}$ menjadi $\approx 62.5\ \text{ns}$ per instruksi. Teknik ini diperlukan untuk menangani protokol komunikasi berkecepatan tinggi (seperti bit-banging bus) atau pembangkitan sinyal pulsa presisi.
 
+### Simulasi Interaktif Wokwi:
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 11: Direct Port Benchmark](https://wokwi.com/projects/475527945535126529)
+* File diagram sirkuit dan kode program tersedia di direktori [code/direct_port_benchmark/](code/direct_port_benchmark/).
+
+

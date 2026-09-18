@@ -301,6 +301,11 @@ void perbaruiTampilan() {
 }
 ```
 
+### Simulasi Interaktif Wokwi:
+* **Tautan Proyek Simulasi (EEPROM State Persistence)**: [Simulasi Wokwi - Modul 09: EEPROM State Persistence](https://wokwi.com/projects/475528078042644481)
+* **Tautan Proyek Simulasi (I2C Scanner)**: [Simulasi Wokwi - Modul 09: I2C Scanner](https://wokwi.com/projects/475528144194164737)
+* File diagram sirkuit dan kode program tersedia di direktori [code/eeprom_state_persistence/](code/eeprom_state_persistence/) dan [code/i2c_scanner/](code/i2c_scanner/).
+
 ---
 
 ## 5. Ringkasan

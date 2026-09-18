@@ -86,3 +86,8 @@ Buka sketch pada folder [`code/power_saving_wdt/power_saving_wdt.ino`](code/powe
 3. Buka Serial Monitor (115200 baud).
 4. Amati log: jika tidak ada tombol yang ditekan selama 10 detik, sistem secara otomatis masuk ke `SLEEP_MODE_PWR_DOWN`.
 5. Tekan tombol pada pin D2: mikrokontroler langsung bangun seketika, mengaktifkan relay selama 2 detik, dan mereset penghitung waktu tidur.
+
+### Simulasi Interaktif Wokwi:
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 13: Power Saving Sleep & WDT](https://wokwi.com/projects/475527819407142913)
+* File diagram sirkuit dan kode program tersedia di direktori [code/power_saving_wdt/](code/power_saving_wdt/).
+

@@ -78,3 +78,8 @@ Buka sketch pada folder [`code/serial_cli_controller/serial_cli_controller.ino`]
 4. Ketik `PWM:200` untuk mengatur kecerahan LED.
 5. Ketik `RELAY:ON` dan dengarkan bunyi *klik* mekanik modul relay.
 6. Ketik `STATUS` untuk mengambil status operasional saat ini.
+
+### Simulasi Interaktif Wokwi:
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 14: Serial CLI Controller](https://wokwi.com/projects/475527756542905345)
+* File diagram sirkuit dan kode program tersedia di direktori [code/serial_cli_controller/](code/serial_cli_controller/).
+

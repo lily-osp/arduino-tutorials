@@ -91,3 +91,8 @@ stateDiagram-v2
    Tekan **Tombol Navigasi (D8)**. Layar beralih ke mode `[PENGATURAN]`. Tekan Navigasi untuk menggulir opsi (Relay Manual, Timer Durasi, LED Kecerahan, Simpan EEPROM). Tekan **Select** untuk mengubah nilai atau mengeksekusi penyimpanan ke EEPROM.
 4. **Uji Keselamatan E-STOP**:
    Kapan pun tombol **D2** ditekan (bahkan saat relay sedang aktif di tengah siklus timer), perangkat keras mikrokontroler langsung memotong relay ke posisi aman (*normally-open*), mengabaikan proses lain, dan membunyikan strobo peringatan visual di LED serta LCD.
+
+### Simulasi Interaktif Wokwi:
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 15: Advanced Industrial Station](https://wokwi.com/projects/475527677492851713)
+* File diagram sirkuit dan kode program tersedia di direktori [code/advanced_industrial_station/](code/advanced_industrial_station/).
+

@@ -84,3 +84,8 @@ Tekan tombol D2 secara berurutan untuk memicu 4 efek audio yang berbeda:
 2. **Jingle Sukses (4 Chime)**: Arpeggio akor mayor C4 - E4 - G4 - C5 tanda akses diterima.
 3. **Peringatan Error (Low Buzz)**: Nada disonan rendah tanda akses ditolak.
 4. **Sirine Darurat (Frequency Sweep)**: Frekuensi menyapu dari 600 Hz hingga 1500 Hz dengan sinkronisasi strobo LED.
+
+### Simulasi Interaktif Wokwi:
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 16: Buzzer Alarm & Melody](https://wokwi.com/projects/475527609724425217)
+* File diagram sirkuit dan kode program tersedia di direktori [code/buzzer_alarm_melody/](code/buzzer_alarm_melody/).
+

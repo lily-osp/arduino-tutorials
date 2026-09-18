@@ -491,6 +491,10 @@ Setelah kode diunggah:
    * Tekan tombol **D4 (RESET)**.
    * Sistem terbebas dari status terkunci dan kembali ke `STANDBY` siap bekerja kembali.
 
+### Simulasi Interaktif Wokwi:
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 10: Smart Industrial Controller (FSM & E-STOP)](https://wokwi.com/projects/475528015174211585)
+* File diagram sirkuit dan kode program tersedia di direktori [code/smart_industrial_controller/](code/smart_industrial_controller/).
+
 ---
 
 ## 7. Selamat! Anda Telah Menyelesaikan Seri 10 Modul Arduino
