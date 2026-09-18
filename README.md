@@ -10,7 +10,7 @@ Semua contoh sirkuit dan kode di tutorial ini dirancang khusus agar dapat diprak
 
 ## Hardware yang Digunakan
 
-Kamu hanya membutuhkan 5 jenis komponen berikut untuk mencoba seluruh materi dari Modul 01 sampai Modul 10:
+Kamu hanya membutuhkan 5 jenis komponen berikut untuk mencoba seluruh materi dari Modul 01 sampai Modul 15:
 
 | Komponen | Tipe / Spesifikasi | Fungsi di Materi |
 |---|---|---|
@@ -21,7 +21,9 @@ Kamu hanya membutuhkan 5 jenis komponen berikut untuk mencoba seluruh materi dar
 | **LED & Resistor** | LED 5mm (Merah, Hijau, Kuning) + Resistor $220\Omega$ | Indikator visual dan PWM |
 | *Pendukung* | Breadboard 400/830 titik + Kabel Jumper (M-M, M-F) | Menyusun sirkuit tanpa solder |
 
-> Kamu juga bisa menjalankan seluruh rangkaian secara virtual di browser menggunakan simulator [Wokwi](https://wokwi.com/) tanpa board fisik.
+> 📋 Daftar lengkap spesifikasi belanja komponen, kabel jumper, software IDE, driver, dan simulasi Wokwi tersedia di:  
+> 👉 [**KOMPONEN.md**](KOMPONEN.md)
+
 
 ---
 
@@ -56,13 +58,14 @@ Materi disusun terstruktur dalam 3 tingkatan. Ikuti materi secara berurutan:
 | [**Modul 14**](14_serial_cli_dan_command_parser/README.md) | Command-Line Interface (CLI) serial non-blocking dan telemetri JSON | Mengontrol relay dan dimmer via terminal teks komputer tanpa blocking |
 | [**Modul 15**](15_sistem_menu_lcd_dan_capstone_lanjutan/README.md) | Sistem menu LCD navigasi 2 tombol, EEPROM state, dan E-STOP interrupt | *Advanced Capstone*: Stasiun kendali otomasi industri cerdas terintegrasi |
 
----
-
 ## Dokumen Pendukung & Referensi Cepat
 
-* [**GLOSARIUM.md**](GLOSARIUM.md) — Kamus istilah A–Z elektronika, arsitektur chip AVR, dan embedded C++.
-* [**ERRORS.md**](ERRORS.md) — Panduan pemecahan masalah: error kompilasi, port serial Linux, avrdude, dan bug hardware.
-* [**CHEATSHEET.md**](CHEATSHEET.md) — Lembar sontekan satu halaman: pinout Uno R3, batas elektrik, register bitwise, dan rumus.
+* 📦 [**KOMPONEN.md**](KOMPONEN.md) — Daftar lengkap kebutuhan hardware (Uno R3, relay, LCD, tombol, LED), software IDE, driver, dan simulator Wokwi.
+* 📖 [**GLOSARIUM.md**](GLOSARIUM.md) — Kamus istilah A–Z elektronika, arsitektur chip AVR, dan embedded C++.
+* 🛠️ [**ERRORS.md**](ERRORS.md) — Panduan pemecahan masalah: error kompilasi, port serial Linux, avrdude, dan bug hardware.
+* ⚡ [**CHEATSHEET.md**](CHEATSHEET.md) — Lembar sontekan satu halaman: pinout Uno R3, batas elektrik, register bitwise, dan rumus.
+
+
 
 ---
 
