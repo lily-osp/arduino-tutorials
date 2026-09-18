@@ -92,10 +92,10 @@ Gunakan tipe data dengan ukuran bit terkecil yang mencukupi rentang nilai variab
 ### Contoh Pemilihan Tipe Data:
 
 ```cpp
-// ❌ Boros memori (memakai 2 byte untuk nilai yang tidak lebih dari 13):
+// Boros memori (memakai 2 byte untuk nilai yang tidak lebih dari 13):
 int pinLed = 13;
 
-// ✔️ Hemat memori (memakai 1 byte dan konstan tidak berubah):
+// Hemat memori (memakai 1 byte dan konstan tidak berubah):
 const uint8_t PIN_LED = 13;
 ```
 
@@ -108,7 +108,7 @@ const uint8_t PIN_LED = 13;
 Di Arduino, Anda dapat menulis teks menggunakan kelas `String` seperti ini:
 
 ```cpp
-// ❌ JANGAN DIGUNAKAN DI ARDUINO DENGAN RAM KECIL:
+// Hindari penggunaan String di Arduino dengan RAM kecil:
 String pesan = "Status: ";
 pesan += "Aktif";
 ```
@@ -125,7 +125,7 @@ Setiap kali Anda menggabungkan dua string atau mengubah panjang teksnya:
 Gunakan array karakter standar C dengan ukuran buffer tetap di stack:
 
 ```cpp
-// ✔️ Aman dari fragmentasi heap:
+// Aman dari fragmentasi heap:
 char pesan[32]; // Cadangkan 32 byte di memori
 int nilaiSensor = 1023;
 
@@ -142,7 +142,7 @@ Secara default di arsitektur AVR, teks string literal yang Anda tulis di dalam k
 
 Perhatikan baris kode ini:
 ```cpp
-// ❌ Menghabiskan 45 byte dari total 2.048 byte SRAM yang berharga!
+// Menghabiskan 45 byte dari total 2.048 byte SRAM yang berharga:
 Serial.println("Sistem Otomasi Industri Aktif dan Siap...");
 ```
 Jika program Anda memiliki 30 baris teks tampilan untuk menu LCD dan debugging Serial, Anda bisa menghabiskan lebih dari 1.000 byte (50% dari total RAM) hanya untuk teks statis!
@@ -151,7 +151,7 @@ Jika program Anda memiliki 30 baris teks tampilan untuk menu LCD dan debugging S
 Bungkus setiap teks literal statis dengan macro `F()`:
 
 ```cpp
-// ✔️ Teks tetap tersimpan di Flash ROM dan langsung dibaca tanpa menyita SRAM:
+// Teks tetap tersimpan di Flash ROM dan langsung dibaca tanpa menyita SRAM:
 Serial.println(F("Sistem Otomasi Industri Aktif dan Siap..."));
 ```
 

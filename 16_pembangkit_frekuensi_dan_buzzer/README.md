@@ -18,7 +18,7 @@ Banyak pemula salah mengira bahwa semua buzzer bekerja dengan cara yang sama. Se
 | **Fungsi Kode** | `digitalWrite(pin, HIGH / LOW)` | `tone(pin, frekuensi, durasi)` dan `noTone(pin)` |
 | **Kegunaan** | Alarm bip sederhana atau bel pintu | Melodi musik, sirine ambulans, nada feedback UI |
 
-> 💡 **Cara Membedakan Tanpa Alat**: Hubungkan kedua kaki buzzer langsung ke baterai kancing 3V atau pin 5V dan GND Arduino. Jika langsung berbunyi *"biiip"*, itu adalah **Buzzer Aktif**. Jika hanya mengeluarkan suara ketukan klik *"tik"* satu kali lalu hening, itu adalah **Buzzer Pasif**.
+> **Cara Membedakan Tanpa Alat**: Hubungkan kedua kaki buzzer langsung ke baterai kancing 3V atau pin 5V dan GND Arduino. Jika langsung berbunyi *"biiip"*, itu adalah **Buzzer Aktif**. Jika hanya mengeluarkan suara ketukan klik *"tik"* satu kali lalu hening, itu adalah **Buzzer Pasif**.
 
 ---
 
@@ -43,7 +43,7 @@ Ketika tegangan listrik polaritas bolak-balik dialirkan, kristal keramik memuai 
 Fungsi `tone(pin, frekuensi, durasi)` pada Arduino Uno memanfaatkan **Hardware Timer 2**:
 * Timer 2 membagi clock kristal 16 MHz untuk memicu toggle pin pada interval frekuensi yang diminta.
 * Karena dikendalikan langsung oleh timer silikon independen, suara akan terus berbunyi di latar belakang tanpa menahan atau memperlambat eksekusi kode di dalam `loop()`.
-* ⚠️ **Konflik Timer**: Menggunakan fungsi `tone()` akan menonaktifkan fungsi PWM (`analogWrite()`) pada pin **D3** dan **D11**, karena keduanya berbagi register Timer 2 yang sama.
+* **Konflik Timer**: Menggunakan fungsi `tone()` akan menonaktifkan fungsi PWM (`analogWrite()`) pada pin **D3** dan **D11**, karena keduanya berbagi register Timer 2 yang sama.
 
 ---
 
@@ -51,7 +51,7 @@ Fungsi `tone(pin, frekuensi, durasi)` pada Arduino Uno memanfaatkan **Hardware T
 
 Kesalahan paling umum adalah memainkan melodi dengan rentetan `delay()`:
 ```cpp
-// ❌ POLA BURUK (Blocking: tombol dan pembacaan sensor membeku saat melodi berbunyi)
+// Pola buruk (blocking: tombol dan pembacaan sensor membeku saat melodi berbunyi)
 tone(11, 440, 200);
 delay(200);
 tone(11, 523, 200);

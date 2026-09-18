@@ -33,7 +33,7 @@ Seluruh 18 modul dalam repositori ini dirancang secara terukur menggunakan kompo
 | 3 | **Kabel Jumper Male-to-Female (M-F)** | Panjang 10–20 cm (minimal 15 helai) | Menghubungkan modul LCD I2C, Relay, dan Keypad ke Arduino |
 | 4 | **Kabel USB Data** | Tipe USB-A ke USB-B (panjang 30–100 cm) | Suplai daya 5V dan transfer data serial upload program |
 
-> ⚠️ **Peringatan Kabel USB**: Pastikan kabel USB yang kamu gunakan adalah **kabel transfer data**, bukan sekadar *charging cable*. Kabel pengisi daya murah tidak memiliki kabel tembaga jalur data (D+ dan D-), sehingga port Arduino tidak akan terdeteksi di komputer.
+> **Peringatan Kabel USB**: Pastikan kabel USB yang kamu gunakan adalah **kabel transfer data**, bukan sekadar *charging cable*. Kabel pengisi daya murah tidak memiliki kabel tembaga jalur data (D+ dan D-), sehingga port Arduino tidak akan terdeteksi di komputer.
 
 ---
 
@@ -111,21 +111,21 @@ Jika kamu belum memiliki komponen fisik, seluruh rangkaian dan program dapat dis
 
 | Modul | Uno R3 | LED | Tombol | Relay | LCD 1602 | Buzzer | Keypad 4x4 | Pustaka Eksternal |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Modul 01** (Anatomi Hardware) | ✔️ | - | - | - | - | - | - | Tidak ada |
-| **Modul 02** (Arduino IDE Toolchain) | ✔️ | D13 | - | - | - | - | - | Tidak ada |
-| **Modul 03** (Dasar Elektronika) | ✔️ | ✔️ (1x) | ✔️ (1x) | - | - | - | - | Tidak ada |
-| **Modul 04** (Pemrograman C/C++) | ✔️ | - | - | - | - | - | - | Tidak ada |
-| **Modul 05** (Digital I/O & Debounce)| ✔️ | ✔️ (1x) | ✔️ (1x) | - | - | - | - | Tidak ada |
-| **Modul 06** (PWM & Dimmer) | ✔️ | ✔️ (1x) | ✔️ (2x) | - | - | - | - | Tidak ada |
-| **Modul 07** (Serial & LCD I2C) | ✔️ | - | ✔️ (2x) | - | ✔️ | - | - | `LiquidCrystal I2C` |
-| **Modul 08** (Kendali Relay 5V) | ✔️ | ✔️ (1x) | ✔️ (1x) | ✔️ | ✔️ | - | - | `LiquidCrystal I2C` |
-| **Modul 09** (Bus I2C & EEPROM) | ✔️ | ✔️ (1x) | ✔️ (2x) | ✔️ | ✔️ | - | - | `LiquidCrystal I2C` |
-| **Modul 10** (Capstone FSM & E-STOP) | ✔️ | ✔️ (1x) | ✔️ (3x) | ✔️ | ✔️ | - | - | `LiquidCrystal I2C` |
-| **Modul 11** (Direct Port Register) | ✔️ | D13 | ✔️ (1x) | - | - | - | - | Tidak ada |
-| **Modul 12** (Timer1 CTC Interrupt) | ✔️ | D13 | - | ✔️ | - | - | - | Tidak ada |
-| **Modul 13** (Low Power & Watchdog) | ✔️ | D13 | ✔️ (1x) | ✔️ | - | - | - | Tidak ada |
-| **Modul 14** (Serial CLI Non-Blocking)| ✔️ | ✔️ (1x) | - | ✔️ | - | - | - | Tidak ada |
-| **Modul 15** (Advanced Capstone Station)| ✔️ | ✔️ (1x) | ✔️ (3x) | ✔️ | ✔️ | - | - | `LiquidCrystal I2C` |
-| **Modul 16** (Frekuensi & Audio Buzzer)| ✔️ | ✔️ (1x) | ✔️ (1x) | - | - | ✔️ | - | Tidak ada |
-| **Modul 17** (Keypad Matriks 4x4) | ✔️ | D13 | - | - | ✔️ | - | ✔️ | `LiquidCrystal I2C` |
-| **Modul 18** (Sistem Keamanan PIN Access)| ✔️ | ✔️ (2x) | - | ✔️ | ✔️ | ✔️ | ✔️ | `LiquidCrystal I2C` |
+| **Modul 01** (Anatomi Hardware) | Ya | - | - | - | - | - | - | Tidak ada |
+| **Modul 02** (Arduino IDE Toolchain) | Ya | D13 | - | - | - | - | - | Tidak ada |
+| **Modul 03** (Dasar Elektronika) | Ya | Ya (1x) | Ya (1x) | - | - | - | - | Tidak ada |
+| **Modul 04** (Pemrograman C/C++) | Ya | - | - | - | - | - | - | Tidak ada |
+| **Modul 05** (Digital I/O & Debounce)| Ya | Ya (1x) | Ya (1x) | - | - | - | - | Tidak ada |
+| **Modul 06** (PWM & Dimmer) | Ya | Ya (1x) | Ya (2x) | - | - | - | - | Tidak ada |
+| **Modul 07** (Serial & LCD I2C) | Ya | - | Ya (2x) | - | Ya | - | - | `LiquidCrystal I2C` |
+| **Modul 08** (Kendali Relay 5V) | Ya | Ya (1x) | Ya (1x) | Ya | Ya | - | - | `LiquidCrystal I2C` |
+| **Modul 09** (Bus I2C & EEPROM) | Ya | Ya (1x) | Ya (2x) | Ya | Ya | - | - | `LiquidCrystal I2C` |
+| **Modul 10** (Capstone FSM & E-STOP) | Ya | Ya (1x) | Ya (3x) | Ya | Ya | - | - | `LiquidCrystal I2C` |
+| **Modul 11** (Direct Port Register) | Ya | D13 | Ya (1x) | - | - | - | - | Tidak ada |
+| **Modul 12** (Timer1 CTC Interrupt) | Ya | D13 | - | Ya | - | - | - | Tidak ada |
+| **Modul 13** (Low Power & Watchdog) | Ya | D13 | Ya (1x) | Ya | - | - | - | Tidak ada |
+| **Modul 14** (Serial CLI Non-Blocking)| Ya | Ya (1x) | - | Ya | - | - | - | Tidak ada |
+| **Modul 15** (Advanced Capstone Station)| Ya | Ya (1x) | Ya (3x) | Ya | Ya | - | - | `LiquidCrystal I2C` |
+| **Modul 16** (Frekuensi & Audio Buzzer)| Ya | Ya (1x) | Ya (1x) | - | - | Ya | - | Tidak ada |
+| **Modul 17** (Keypad Matriks 4x4) | Ya | D13 | - | - | Ya | - | Ya | `LiquidCrystal I2C` |
+| **Modul 18** (Sistem Keamanan PIN Access)| Ya | Ya (2x) | - | Ya | Ya | Ya | Ya | `LiquidCrystal I2C` |

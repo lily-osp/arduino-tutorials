@@ -23,8 +23,7 @@ Seluruh materi dari Modul 01 sampai Modul 18 disusun menggunakan komponen standa
 | **Keypad Matriks 4x4** | 16 tombol membran/tactile (0-9, A-D, *, #) | Input numerik sandi PIN keamanan |
 | *Pendukung* | Breadboard 400/830 titik + Kabel Jumper (M-M, M-F) | Menyusun sirkuit tanpa solder |
 
-> 📋 Daftar lengkap spesifikasi belanja komponen, kabel jumper, software IDE, driver, dan simulasi Wokwi tersedia di:  
-> 👉 [**KOMPONEN.md**](KOMPONEN.md)
+> Daftar spesifikasi belanja komponen, kabel jumper, software IDE, driver, dan simulasi Wokwi tersedia di [**KOMPONEN.md**](KOMPONEN.md).
 
 ---
 
@@ -69,10 +68,10 @@ Materi disusun terstruktur dalam 4 tingkatan. Ikuti materi secara berurutan:
 
 ## Dokumen Pendukung & Referensi Cepat
 
-* 📦 [**KOMPONEN.md**](KOMPONEN.md) — Daftar lengkap kebutuhan hardware (Uno R3, relay, LCD, tombol, LED), software IDE, driver, dan simulator Wokwi.
-* 📖 [**GLOSARIUM.md**](GLOSARIUM.md) — Kamus istilah A–Z elektronika, arsitektur chip AVR, dan embedded C++.
-* 🛠️ [**ERRORS.md**](ERRORS.md) — Panduan pemecahan masalah: error kompilasi, port serial Linux, avrdude, dan bug hardware.
-* ⚡ [**CHEATSHEET.md**](CHEATSHEET.md) — Lembar sontekan satu halaman: pinout Uno R3, batas elektrik, register bitwise, dan rumus.
+* [**KOMPONEN.md**](KOMPONEN.md) — Daftar lengkap kebutuhan hardware (Uno R3, relay, LCD, tombol, LED), software IDE, driver, dan simulator Wokwi.
+* [**GLOSARIUM.md**](GLOSARIUM.md) — Kamus istilah A–Z elektronika, arsitektur chip AVR, dan embedded C++.
+* [**ERRORS.md**](ERRORS.md) — Panduan pemecahan masalah: error kompilasi, port serial Linux, avrdude, dan bug hardware.
+* [**CHEATSHEET.md**](CHEATSHEET.md) — Lembar sontekan satu halaman: pinout Uno R3, batas elektrik, register bitwise, dan rumus.
 
 
 

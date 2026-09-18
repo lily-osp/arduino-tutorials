@@ -33,7 +33,7 @@ Pustaka `<avr/sleep.h>` menyediakan lima tingkat penghematan daya:
 | **Power-save** | Padam | Timer 2 saja | Sangat Rendah | Timer 2 RTC, interupsi eksternal |
 | **Power-down** | **Padam Total** | **Padam Total** | **Ultra Rendah ($< 1\ \mu\text{A}$ pada chip)** | **Interupsi Eksternal INT0/INT1 (Pin D2/D3)** |
 
-> 📌 **Catatan Hardware**: Pada board Arduino Uno R3 lengkap, terdapat chip USB interface (CH340/16U2), regulator linier 5V, dan LED indikator ON yang tetap mengonsumsi daya sekitar $10 - 25\text{ mA}$ meskipun chip ATmega328P sudah tertidur. Namun pada rangkaian mandiri (*bare-metal board/stand-alone*), konsumsi baterai dapat ditekan hingga di bawah $1\ \mu\text{A}$.
+> **Catatan Hardware**: Pada board Arduino Uno R3 lengkap, terdapat chip USB interface (CH340/16U2), regulator linier 5V, dan LED indikator ON yang tetap mengonsumsi daya sekitar $10 - 25\text{ mA}$ meskipun chip ATmega328P sudah tertidur. Namun pada rangkaian mandiri (*bare-metal board/stand-alone*), konsumsi baterai dapat ditekan hingga di bawah $1\ \mu\text{A}$.
 
 ---
 

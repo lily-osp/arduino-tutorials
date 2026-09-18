@@ -8,7 +8,7 @@ Mengubah Arduino Uno R3 menjadi perangkat cerdas yang dapat dikontrol dari kompu
 
 Banyak pemula tergoda menggunakan fungsi bawaan seperti:
 ```cpp
-// ❌ SANGAT BERBAHAYA UNTUK SISTEM REAL-TIME
+// Berbahaya untuk sistem real-time (blocking & alokasi heap):
 String input = Serial.readStringUntil('\n');
 int nilai = Serial.parseInt();
 ```

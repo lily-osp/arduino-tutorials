@@ -22,7 +22,7 @@ Dengan **Hardware Timer Interrupt**, timer berjalan sendiri pada level silikon t
 | **Timer 1** | 16-bit | $2^{16} - 1 = 65.535$ | Mengendalikan PWM pin 9 & 10, library servo, dan pewaktu presisi tinggi |
 | **Timer 2** | 8-bit | $2^8 - 1 = 255$ | Mengendalikan fungsi `tone()` dan PWM pin 3 & 11 |
 
-> ⚠️ Jangan mengubah konfigurasi **Timer 0** jika proyek kamu masih mengandalkan fungsi `delay()` atau `millis()`, karena fungsi tersebut akan rusak jika Timer 0 dimodifikasi. Gunakan **Timer 1** (16-bit) untuk aplikasi pewaktu kustom presisi tinggi.
+> **Peringatan**: Jangan mengubah konfigurasi **Timer 0** jika proyek kamu masih mengandalkan fungsi `delay()` atau `millis()`, karena fungsi tersebut akan rusak jika Timer 0 dimodifikasi. Gunakan **Timer 1** (16-bit) untuk aplikasi pewaktu kustom presisi tinggi.
 
 ---
 
