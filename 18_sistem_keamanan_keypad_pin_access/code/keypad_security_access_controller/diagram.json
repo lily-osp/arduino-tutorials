@@ -14,13 +14,13 @@
       "type": "wokwi-membrane-keypad",
       "id": "keypad1",
       "top": 10,
-      "left": -280,
+      "left": -330,
       "attrs": {}
     },
     {
       "type": "wokwi-lcd1602",
       "id": "lcd1",
-      "top": 270,
+      "top": 256,
       "left": 15.2,
       "attrs": {
         "pins": "i2c"
@@ -29,52 +29,16 @@
     {
       "type": "wokwi-relay-module",
       "id": "relay1",
-      "top": 0,
-      "left": 340,
-      "attrs": {}
-    },
-    {
-      "type": "wokwi-buzzer",
-      "id": "bz1",
-      "top": 120,
-      "left": 380,
-      "attrs": {
-        "hasPassiveBuzzer": "true"
-      }
-    },
-    {
-      "type": "wokwi-resistor",
-      "id": "r_bz",
-      "top": 145,
-      "left": 310,
-      "attrs": {
-        "value": "100"
-      }
-    },
-    {
-      "type": "wokwi-led",
-      "id": "led_red",
-      "top": -145,
-      "left": 175,
-      "attrs": {
-        "color": "red"
-      }
-    },
-    {
-      "type": "wokwi-resistor",
-      "id": "r_red",
-      "top": -70,
-      "left": 200,
+      "top": -141,
+      "left": 22.8,
       "rotate": 270,
-      "attrs": {
-        "value": "220"
-      }
+      "attrs": {}
     },
     {
       "type": "wokwi-led",
       "id": "led_grn",
-      "top": -145,
-      "left": 85,
+      "top": -138,
+      "left": 120,
       "attrs": {
         "color": "green"
       }
@@ -82,11 +46,48 @@
     {
       "type": "wokwi-resistor",
       "id": "r_grn",
-      "top": -70,
-      "left": 110,
+      "top": -54.2,
+      "left": 144.15,
       "rotate": 270,
       "attrs": {
         "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_red",
+      "top": -138,
+      "left": 155,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_red",
+      "top": -54.2,
+      "left": 179.15,
+      "rotate": 270,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 60,
+      "left": 340,
+      "attrs": {
+        "hasPassiveBuzzer": "true"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_bz",
+      "top": 60,
+      "left": 300,
+      "attrs": {
+        "value": "100"
       }
     }
   ],
@@ -96,8 +97,10 @@
       "uno:9",
       "gray",
       [
-        "v-20",
-        "h160"
+        "v25",
+        "h174",
+        "v-388",
+        "h218.4"
       ]
     ],
     [
@@ -105,8 +108,10 @@
       "uno:8",
       "purple",
       [
-        "v-20",
-        "h170"
+        "v28",
+        "h170",
+        "v-396",
+        "h222.4"
       ]
     ],
     [
@@ -114,8 +119,10 @@
       "uno:7",
       "blue",
       [
-        "v-20",
-        "h180"
+        "v31",
+        "h166.5",
+        "v-404",
+        "h232.4"
       ]
     ],
     [
@@ -123,8 +130,10 @@
       "uno:6",
       "green",
       [
-        "v-20",
-        "h190"
+        "v34",
+        "h163",
+        "v-412",
+        "h235.9"
       ]
     ],
     [
@@ -132,8 +141,10 @@
       "uno:5",
       "yellow",
       [
-        "v-20",
-        "h200"
+        "v37",
+        "h159.5",
+        "v-420",
+        "h239.4"
       ]
     ],
     [
@@ -141,8 +152,10 @@
       "uno:4",
       "orange",
       [
-        "v-20",
-        "h210"
+        "v40",
+        "h156",
+        "v-428",
+        "h242.9"
       ]
     ],
     [
@@ -150,8 +163,10 @@
       "uno:3",
       "red",
       [
-        "v-20",
-        "h220"
+        "v43",
+        "h152.2",
+        "v-436",
+        "h246.4"
       ]
     ],
     [
@@ -159,8 +174,10 @@
       "uno:2",
       "brown",
       [
-        "v-20",
-        "h230"
+        "v46",
+        "h148.5",
+        "v-444",
+        "h249.9"
       ]
     ],
     [
@@ -208,18 +225,17 @@
       "uno:5V",
       "red",
       [
-        "h-40",
-        "v120",
-        "h-190"
+        "v28.8",
+        "h82.6"
       ]
     ],
     [
       "relay1:GND",
-      "uno:GND.3",
+      "uno:GND.1",
       "black",
       [
-        "h-30",
-        "v10"
+        "v38.4",
+        "h28.1"
       ]
     ],
     [
@@ -227,9 +243,56 @@
       "uno:12",
       "cyan",
       [
-        "h-20",
-        "v-60",
-        "h-230"
+        "v28.8",
+        "h37.7"
+      ]
+    ],
+    [
+      "uno:13",
+      "r_grn:1",
+      "green",
+      []
+    ],
+    [
+      "r_grn:2",
+      "led_grn:A",
+      "green",
+      [
+        "v-18"
+      ]
+    ],
+    [
+      "led_grn:C",
+      "uno:GND.1",
+      "black",
+      [
+        "h-18.8",
+        "v86.4",
+        "h-19.5"
+      ]
+    ],
+    [
+      "uno:10",
+      "r_red:1",
+      "red",
+      []
+    ],
+    [
+      "r_red:2",
+      "led_red:A",
+      "red",
+      [
+        "v-18"
+      ]
+    ],
+    [
+      "led_red:C",
+      "uno:GND.1",
+      "black",
+      [
+        "h-18.8",
+        "v86.4",
+        "h-48"
       ]
     ],
     [
@@ -237,9 +300,8 @@
       "uno:11",
       "purple",
       [
-        "h-10",
-        "v-160",
-        "h-170"
+        "v-70",
+        "h-156.6"
       ]
     ],
     [
@@ -252,69 +314,11 @@
     ],
     [
       "bz1:1",
-      "uno:GND.3",
-      "black",
-      [
-        "h-40",
-        "v-40"
-      ]
-    ],
-    [
-      "uno:10",
-      "r_red:1",
-      "red",
-      [
-        "v-19.2",
-        "h-0.2"
-      ]
-    ],
-    [
-      "r_red:2",
-      "led_red:A",
-      "red",
-      [
-        "v-38.4",
-        "h-32"
-      ]
-    ],
-    [
-      "led_red:C",
       "uno:GND.1",
       "black",
       [
-        "v9.6",
-        "h18.8",
-        "v86.4",
-        "h-40"
-      ]
-    ],
-    [
-      "uno:13",
-      "r_grn:1",
-      "green",
-      [
-        "v-19.2",
-        "h-0.2"
-      ]
-    ],
-    [
-      "r_grn:2",
-      "led_grn:A",
-      "green",
-      [
-        "v-38.4",
-        "h-32"
-      ]
-    ],
-    [
-      "led_grn:C",
-      "uno:GND.1",
-      "black",
-      [
-        "v9.6",
-        "h18.8",
-        "v86.4",
-        "h38"
+        "v-115",
+        "h-252.1"
       ]
     ]
   ],

@@ -13,7 +13,7 @@
     {
       "type": "wokwi-lcd1602",
       "id": "lcd1",
-      "top": 270,
+      "top": 256,
       "left": 15.2,
       "attrs": {
         "pins": "i2c"
@@ -22,16 +22,16 @@
     {
       "type": "wokwi-relay-module",
       "id": "relay1",
-      "top": -140,
-      "left": 30,
+      "top": -141,
+      "left": 22.8,
       "rotate": 270,
       "attrs": {}
     },
     {
       "type": "wokwi-led",
       "id": "led1",
-      "top": -145,
-      "left": 155,
+      "top": -138,
+      "left": 138.2,
       "attrs": {
         "color": "yellow"
       }
@@ -39,8 +39,8 @@
     {
       "type": "wokwi-resistor",
       "id": "r1",
-      "top": -70,
-      "left": 180,
+      "top": -54.2,
+      "left": 162.35,
       "rotate": 270,
       "attrs": {
         "value": "220"
@@ -138,23 +138,23 @@
     ],
     [
       "relay1:IN",
-      "uno:7",
+      "uno:8",
       "purple",
       [
         "v19.2",
-        "h85.8"
+        "h76.2"
       ]
     ],
     [
-      "uno:6",
+      "uno:7",
       "r1:1",
-      "orange",
+      "gold",
       []
     ],
     [
       "r1:2",
       "led1:A",
-      "orange",
+      "gold",
       [
         "v-18"
       ]
@@ -178,19 +178,19 @@
       ]
     ],
     [
-      "uno:8",
+      "uno:3",
       "btn_menu:1.l",
       "blue",
       [
-        "v0"
+        "h0"
       ]
     ],
     [
-      "uno:9",
+      "uno:4",
       "btn_select:1.l",
       "green",
       [
-        "v0"
+        "h0"
       ]
     ],
     [

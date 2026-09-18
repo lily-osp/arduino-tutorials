@@ -13,7 +13,7 @@
     {
       "type": "wokwi-lcd1602",
       "id": "lcd1",
-      "top": 270,
+      "top": 256,
       "left": 15.2,
       "attrs": {
         "pins": "i2c"
