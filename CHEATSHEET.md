@@ -123,3 +123,30 @@ void handleEmergencyStop() {
 * `0x68`: RTC DS1307 / DS3231 atau Sensor Gyro MPU6050
 * `0x3C`: Layar OLED 0.96 inch SSD1306
 * `0x50` - `0x57`: EEPROM Eksternal 24C32
+
+---
+
+## 6. Referensi Frekuensi Nada Audio (Buzzer Pasif)
+
+| Nada | Frekuensi (Hz) | Nada | Frekuensi (Hz) |
+|:---:|:---:|:---:|:---:|
+| **C4 (Do)** | $262\text{ Hz}$ | **G4 (Sol)** | $392\text{ Hz}$ |
+| **D4 (Re)** | $294\text{ Hz}$ | **A4 (La)**  | $440\text{ Hz}$ |
+| **E4 (Mi)** | $330\text{ Hz}$ | **B4 (Si)**  | $494\text{ Hz}$ |
+| **F4 (Fa)** | $349\text{ Hz}$ | **C5 (Do Tinggi)** | $523\text{ Hz}$ |
+
+Sintaks: `tone(pin, frekuensi, durasi_ms);` dan `noTone(pin);`
+
+---
+
+## 7. Skema Matriks Keypad 4x4 (16 Tombol / 8 Pin)
+
+| Baris / Kolom | **Col 1 (D5)** | **Col 2 (D4)** | **Col 3 (D3)** | **Col 4 (D2)** |
+|:---:|:---:|:---:|:---:|:---:|
+| **Row 1 (D9)** | `1` | `2` | `3` | `A` |
+| **Row 2 (D8)** | `4` | `5` | `6` | `B` |
+| **Row 3 (D7)** | `7` | `8` | `9` | `C` |
+| **Row 4 (D6)** | `*` | `0` | `#` | `D` |
+
+Metode: Set 1 Baris ke `LOW` (`OUTPUT`), baca Kolom dengan `INPUT_PULLUP`.
+

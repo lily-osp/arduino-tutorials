@@ -10,26 +10,27 @@ Semua contoh sirkuit dan kode di tutorial ini dirancang khusus agar dapat diprak
 
 ## Hardware yang Digunakan
 
-Kamu hanya membutuhkan 5 jenis komponen berikut untuk mencoba seluruh materi dari Modul 01 sampai Modul 15:
+Seluruh materi dari Modul 01 sampai Modul 18 disusun menggunakan komponen standar berikut:
 
 | Komponen | Tipe / Spesifikasi | Fungsi di Materi |
 |---|---|---|
 | **Arduino Uno R3** | Mikrokontroler ATmega328P (16 MHz, 5V) | Otak pemroses utama |
-| **LCD 1602 + I2C** | 16 kolom x 2 baris dengan backpack PCF8574 | Menampilkan data dan menu |
-| **Push Button** | Tactile switch 4 pin (2–3 buah) | Input tombol dan interupsi |
-| **Modul Relay 5V** | 1 atau 2 channel dengan optocoupler | Mengendalikan beban listrik |
-| **LED & Resistor** | LED 5mm (Merah, Hijau, Kuning) + Resistor $220\Omega$ | Indikator visual dan PWM |
+| **LCD 1602 + I2C** | 16 kolom x 2 baris dengan backpack PCF8574 | Menampilkan data, menu, dan status PIN |
+| **Push Button** | Tactile switch 4 pin (2–3 buah) | Input tombol dan interupsi darurat |
+| **Modul Relay 5V** | 1 channel dengan isolasi optocoupler | Sakelar beban listrik dan kunci solenoid |
+| **LED & Resistor** | LED 5mm (Merah, Hijau, Kuning) + Resistor $220\Omega$ | Indikator visual, PWM, dan status akses |
+| **Buzzer Pasif** | Transduser piezoelektrik keramik + Resistor $100\Omega$ | Umpan balik audio nada, melodi, dan sirine |
+| **Keypad Matriks 4x4** | 16 tombol membran/tactile (0-9, A-D, *, #) | Input numerik sandi PIN keamanan |
 | *Pendukung* | Breadboard 400/830 titik + Kabel Jumper (M-M, M-F) | Menyusun sirkuit tanpa solder |
 
 > 📋 Daftar lengkap spesifikasi belanja komponen, kabel jumper, software IDE, driver, dan simulasi Wokwi tersedia di:  
 > 👉 [**KOMPONEN.md**](KOMPONEN.md)
 
-
 ---
 
-## Jalur Belajar (15 Modul)
+## Jalur Belajar (18 Modul)
 
-Materi disusun terstruktur dalam 3 tingkatan. Ikuti materi secara berurutan:
+Materi disusun terstruktur dalam 4 tingkatan. Ikuti materi secara berurutan:
 
 ### Tingkat 1: Fondasi Elektronika & Pemrograman C/C++
 | Modul | Materi Pokok | Praktik yang Dibuat |
@@ -57,6 +58,14 @@ Materi disusun terstruktur dalam 3 tingkatan. Ikuti materi secara berurutan:
 | [**Modul 13**](13_low_power_dan_watchdog_timer/README.md) | Mode tidur hemat energi (`SLEEP_MODE_PWR_DOWN`) dan Watchdog Timer (WDT) | Sistem fault-tolerant: auto-sleep idle, bangun via INT0, auto-reboot saat hang |
 | [**Modul 14**](14_serial_cli_dan_command_parser/README.md) | Command-Line Interface (CLI) serial non-blocking dan telemetri JSON | Mengontrol relay dan dimmer via terminal teks komputer tanpa blocking |
 | [**Modul 15**](15_sistem_menu_lcd_dan_capstone_lanjutan/README.md) | Sistem menu LCD navigasi 2 tombol, EEPROM state, dan E-STOP interrupt | *Advanced Capstone*: Stasiun kendali otomasi industri cerdas terintegrasi |
+
+### Tingkat 4: Periferal Matriks & Sistem Keamanan Terpadu
+| Modul | Materi Pokok | Praktik yang Dibuat |
+|---|---|---|
+| [**Modul 16**](16_pembangkit_frekuensi_dan_buzzer/README.md) | Fisika keramik piezo, buzzer aktif vs pasif, register Timer 2 `tone()` | Pembangkit audio efek non-blocking: beep klik, jingle sukses, sirine sweep |
+| [**Modul 17**](17_keypad_matriks_4x4_scanning/README.md) | Grid multiplexing 16 tombol dengan 8 pin, algoritma row-column sweep | Scanner keypad mandiri tanpa library eksternal dengan feedback LCD I2C |
+| [**Modul 18**](18_sistem_keamanan_keypad_pin_access/README.md) | Integrasi 7 periferal: Keypad 4x4, LCD, Buzzer, Relay, LED, EEPROM | *Grand Capstone*: Sistem kontrol akses kunci pintu PIN dengan proteksi lockout |
+
 
 ## Dokumen Pendukung & Referensi Cepat
 

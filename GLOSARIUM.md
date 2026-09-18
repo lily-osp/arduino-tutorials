@@ -52,8 +52,14 @@ Program kecil yang tersimpan permanen di area teratas memori Flash mikrokontrole
 ### Breadboard
 Papan plastik berlubang yang digunakan untuk merangkai sirkuit elektronika prototipe tanpa perlu menyolder. Lubang-lubang dihubungkan oleh pelat penjepit logam di bagian dalamnya.
 
+### Buzzer (Aktif & Pasif)
+Komponen penghasil suara berbasis transduser audio:
+* **Buzzer Aktif**: Memiliki osilator internal terintegrasi; langsung berbunyi bip pada satu frekuensi tetap begitu diberi tegangan DC 5V (`HIGH`).
+* **Buzzer Pasif**: Tidak memiliki osilator; membutuhkan sinyal gelombang kotak bolak-balik berfrekuensi (`tone()`) untuk menggetarkan membran keramik piezoelektriknya agar dapat memainkan tangga nada melodi musik.
+
 ### CH340
 Chip terintegrasi (IC) konverter USB-to-UART murah buatan WCH yang umum digunakan pada papan Arduino Uno dan Nano versi clone/kompatibel.
+
 
 ### CLI (Command Line Interface)
 Antarmuka baris perintah berbasis teks di mana pengguna atau komputer host mengontrol perangkat embedded melalui pengiriman string perintah terstruktur (seperti `RELAY:ON` atau `STATUS`) via port serial.
@@ -103,6 +109,9 @@ Kondisi di mana pin input mikrokontroler tidak terhubung ke tegangan pasti (5V m
 ### Flyback Diode (Freewheeling Diode)
 Dioda penyearah yang dipasang berlawanan polaritas melintasi kumparan induktif (seperti koil relay) untuk membuang lonjakan tegangan balik (*Back EMF*) ke jalur aman.
 
+### Ghosting (Keypad Matriks)
+Kesalahan pembacaan tombol bayangan pada keyboard matriks yang terjadi saat tiga atau lebih tombol yang saling terhubung dalam satu simpul grid ditekan secara bersamaan, sehingga arus mengalir balik dan menipu mikrokontroler seolah-olah tombol keempat juga ditekan.
+
 ### Ground (GND)
 Titik referensi nol volt ($0\text{V}$) dalam rangkaian listrik. Seluruh arus listrik yang mengalir dari sumber tegangan positif pada akhirnya harus kembali ke Ground untuk membentuk rangkaian tertutup (*closed loop*).
 
@@ -126,8 +135,12 @@ Mode konfigurasi pin pada `pinMode()` yang menghubungkan resistor pull-up intern
 ### Interrupt (Interupsi) & ISR
 Mekanisme perangkat keras di mana peristiwa luar (misal penekanan tombol di pin D2) seketika menghentikan eksekusi kode utama untuk menjalankan fungsi penanganan khusus (**Interrupt Service Routine / ISR**) dalam hitungan mikrodetik.
 
+### Keypad Matriks 4x4
+Modul antarmuka 16 tombol yang disusun dalam petak 4 baris dan 4 kolom. Bekerja menggunakan prinsip multiplexing di mana 8 pin mikrokontroler dapat memindai status seluruh 16 tombol secara berurutan.
+
 ### LCD 1602
 Layar liquid crystal display karakter yang mampu menampilkan teks sebanyak 16 kolom dan 2 baris (total 32 karakter). Umumnya dipasangi backpack modul PCF8574 agar dapat dikendalikan via protokol I2C.
+
 
 ### LED (Light Emitting Diode)
 Komponen semikonduktor yang memancarkan cahaya saat dialiri arus searah dari anoda ke katoda. Wajib dipasangi resistor pembatas arus ($220\Omega - 330\Omega$) agar arusnya tidak melebihi batas aman $20\text{mA}$.
@@ -138,14 +151,21 @@ Sintaks Arduino (`F("teks")`) yang memaksa string literal konstan tetap disimpan
 ### `millis()` & `micros()`
 Fungsi pencatat waktu yang mengembalikan jumlah milidetik (atau mikrodetik) yang telah berlalu sejak papan Arduino pertama kali dinyalakan. Digunakan sebagai basis penjadwal waktu non-blocking. Nilai akan meluap (*rollover*) kembali ke 0 setelah sekitar 50 hari.
 
+### Multiplexing
+Teknik menggabungkan beberapa saluran sinyal atau tombol ke dalam jalur kabel yang lebih sedikit secara bergantian menurut waktu (time-division), seperti mengendalikan 16 tombol keypad hanya dengan 8 pin mikrokontroler.
+
 ### Optocoupler (Optoisolator)
 Komponen isolasi listrik yang memindahkan sinyal kendali menggunakan cahaya inframerah. Memisahkan jalur ground sirkuit mikrokontroler dari sirkuit beban relay untuk mencegah lonjakan tegangan merusak mikroprosesor.
 
 ### PCF8574
 IC expander I/O 8-bit yang mengubah komunikasi serial I2C (SDA/SCL) menjadi 8 jalur pin paralel, umum digunakan sebagai modul backpack pada LCD 1602.
 
+### Piezoelektrik (Efek Piezoelektrik)
+Kemampuan material kristal atau keramik tertentu (seperti PZT) untuk menghasilkan tegangan listrik saat diberi tekanan mekanis, atau sebaliknya, melentur dan bergetar menghasilkan gelombang suara saat dialiri sinyal listrik bolak-balik berfrekuensi (prinsip kerja buzzer pasif).
+
 ### `pinMode()`
 Fungsi inisialisasi di `setup()` untuk menentukan peran pin digital: sebagai masukan (`INPUT`), masukan berhambatan dalam (`INPUT_PULLUP`), atau keluaran daya (`OUTPUT`).
+
 
 ### `PINx` (Input Pins Address Register)
 Register I/O *read-only* pada arsitektur AVR yang merefleksikan level logika tegangan fisik pada pin saat ini. Menulis bit `1` ke alamat register `PINx` akan membalik (*toggle*) output pin terkait secara instan pada level hardware.
@@ -199,8 +219,14 @@ Kondisi operasional hemat daya di mana clock CPU dan berbagai periferal internal
 * **`String`**: Objek C++ dinamis dengan alokasi heap. Berbahaya digunakan pada chip AVR RAM 2KB karena memicu fragmentasi memori (*heap fragmentation*) yang berujung crash acak.
 * **`char[]`**: Array karakter C murni dengan ukuran memori statis tetap. Sangat aman dan direkomendasikan untuk seluruh aplikasi mikrokontroler.
 
+### `tone()` & `noTone()`
+Fungsi bawaan Arduino untuk membangkitkan sinyal audio gelombang kotak dengan frekuensi tertentu (rentang 31 Hz – 65.535 Hz) pada pin tertentu memanfaatkan Hardware Timer 2:
+* `tone(pin, frekuensi, durasi)`: Memulai pembangkitan pulsa audio.
+* `noTone(pin)`: Menghentikan sinyal nada pada pin terkait.
+
 ### UART (Universal Asynchronous Receiver-Transmitter)
 Modul periferal komunikasi serial asinkron perangkat keras pada mikrokontroler yang bekerja melalui dua pin: **TX** (Transmit / kirim) dan **RX** (Receive / terima). Pada Uno R3, UART terhubung ke pin D0 dan D1 serta port USB.
+
 
 ### `volatile`
 Kata kunci (*type qualifier*) pada deklarasi variabel C/C++ yang menginstruksikan compiler untuk selalu membaca nilai variabel langsung dari RAM dan bukan dari register CPU cache. **Wajib digunakan** pada setiap variabel yang diubah di dalam fungsi ISR interupsi perangkat keras.

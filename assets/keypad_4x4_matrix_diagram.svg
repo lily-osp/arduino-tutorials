@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .box { fill: #1e293b; stroke: #0f172a; stroke-width: 3; rx: 12px; }
+      .btn { fill: #334155; stroke: #475569; stroke-width: 2; rx: 8px; cursor: pointer; }
+      .btn-func { fill: #dc2626; stroke: #b91c1c; stroke-width: 2; rx: 8px; }
+      .btn-alpha { fill: #2563eb; stroke: #1d4ed8; stroke-width: 2; rx: 8px; }
+      .text-key { fill: #ffffff; font-family: monospace, sans-serif; font-size: 24px; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
+      .line-row { stroke: #ef4444; stroke-width: 3; stroke-dasharray: 6,4; }
+      .line-col { stroke: #3b82f6; stroke-width: 3; stroke-dasharray: 6,4; }
+      .line-pin { stroke: #64748b; stroke-width: 4; stroke-linecap: round; }
+      .pin-label { font-family: monospace, sans-serif; font-size: 14px; font-weight: bold; }
+      .header-title { font-family: sans-serif; font-size: 22px; font-weight: bold; fill: #0f172a; }
+      .header-desc { font-family: sans-serif; font-size: 14px; fill: #475569; }
+      .legend-box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; rx: 6px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- Header -->
+  <text x="40" y="45" class="header-title">Skema Matriks &amp; Pinout Keypad 4x4 (16 Tombol / 8 Pin)</text>
+  <text x="40" y="72" class="header-desc">Multiplexing 4 Jalur Baris (Row 1-4) dan 4 Jalur Kolom (Col 1-4) dengan Proteksi Anti-Ghosting</text>
+
+  <!-- Membrane Keypad Body -->
+  <rect x="80" y="110" width="340" height="380" class="box" />
+
+  <!-- Keypad Buttons Grid -->
+  <!-- Row 1 -->
+  <rect x="105" y="135" width="60" height="60" class="btn" /><text x="135" y="165" class="text-key">1</text>
+  <rect x="180" y="135" width="60" height="60" class="btn" /><text x="210" y="165" class="text-key">2</text>
+  <rect x="255" y="135" width="60" height="60" class="btn" /><text x="285" y="165" class="text-key">3</text>
+  <rect x="330" y="135" width="60" height="60" class="btn-alpha" /><text x="360" y="165" class="text-key">A</text>
+
+  <!-- Row 2 -->
+  <rect x="105" y="220" width="60" height="60" class="btn" /><text x="135" y="250" class="text-key">4</text>
+  <rect x="180" y="220" width="60" height="60" class="btn" /><text x="210" y="250" class="text-key">5</text>
+  <rect x="255" y="220" width="60" height="60" class="btn" /><text x="285" y="250" class="text-key">6</text>
+  <rect x="330" y="220" width="60" height="60" class="btn-alpha" /><text x="360" y="250" class="text-key">B</text>
+
+  <!-- Row 3 -->
+  <rect x="105" y="305" width="60" height="60" class="btn" /><text x="135" y="335" class="text-key">7</text>
+  <rect x="180" y="305" width="60" height="60" class="btn" /><text x="210" y="335" class="text-key">8</text>
+  <rect x="255" y="305" width="60" height="60" class="btn" /><text x="285" y="335" class="text-key">9</text>
+  <rect x="330" y="305" width="60" height="60" class="btn-alpha" /><text x="360" y="335" class="text-key">C</text>
+
+  <!-- Row 4 -->
+  <rect x="105" y="390" width="60" height="60" class="btn-func" /><text x="135" y="420" class="text-key">*</text>
+  <rect x="180" y="390" width="60" height="60" class="btn" /><text x="210" y="420" class="text-key">0</text>
+  <rect x="255" y="390" width="60" height="60" class="btn-func" /><text x="285" y="420" class="text-key">#</text>
+  <rect x="330" y="390" width="60" height="60" class="btn-alpha" /><text x="360" y="420" class="text-key">D</text>
+
+  <!-- Header Ribbon Cable on bottom -->
+  <path d="M 120 490 L 120 540 L 380 540 L 380 490 Z" fill="#334155" />
+  
+  <!-- 8 Pin Output Headers -->
+  <g transform="translate(140, 540)">
+    <!-- Pins 1-4 (Rows) -->
+    <circle cx="0" cy="15" r="5" fill="#ef4444" /><text x="0" y="35" class="pin-label" fill="#ef4444" text-anchor="middle">R1</text>
+    <circle cx="28" cy="15" r="5" fill="#ef4444" /><text x="28" y="35" class="pin-label" fill="#ef4444" text-anchor="middle">R2</text>
+    <circle cx="56" cy="15" r="5" fill="#ef4444" /><text x="56" y="35" class="pin-label" fill="#ef4444" text-anchor="middle">R3</text>
+    <circle cx="84" cy="15" r="5" fill="#ef4444" /><text x="84" y="35" class="pin-label" fill="#ef4444" text-anchor="middle">R4</text>
+    <!-- Pins 5-8 (Cols) -->
+    <circle cx="120" cy="15" r="5" fill="#3b82f6" /><text x="120" y="35" class="pin-label" fill="#3b82f6" text-anchor="middle">C1</text>
+    <circle cx="148" cy="15" r="5" fill="#3b82f6" /><text x="148" y="35" class="pin-label" fill="#3b82f6" text-anchor="middle">C2</text>
+    <circle cx="176" cy="15" r="5" fill="#3b82f6" /><text x="176" y="35" class="pin-label" fill="#3b82f6" text-anchor="middle">C3</text>
+    <circle cx="204" cy="15" r="5" fill="#3b82f6" /><text x="204" y="35" class="pin-label" fill="#3b82f6" text-anchor="middle">C4</text>
+  </g>
+
+  <!-- Explanation Panel on Right -->
+  <g transform="translate(470, 110)">
+    <rect x="0" y="0" width="290" height="380" class="legend-box" />
+    <text x="20" y="35" font-family="sans-serif" font-size="18px" font-weight="bold" fill="#0f172a">Logika Pemindaian Matriks</text>
+    
+    <text x="20" y="70" font-family="sans-serif" font-size="13px" fill="#334155">
+      <tspan x="20" dy="0" font-weight="bold" fill="#ef4444">1. Baris (Row 1-4) = OUTPUT</tspan>
+      <tspan x="20" dy="20">Arduino mengatur 1 baris ke LOW</tspan>
+      <tspan x="20" dy="18">secara bergantian (sequential scan).</tspan>
+      
+      <tspan x="20" dy="35" font-weight="bold" fill="#3b82f6">2. Kolom (Col 1-4) = INPUT_PULLUP</tspan>
+      <tspan x="20" dy="20">Semua kolom standby HIGH (5V).</tspan>
+      <tspan x="20" dy="18">Jika tombol ditekan, kolom terkait</tspan>
+      <tspan x="20" dy="18">tertarik menjadi LOW (0V).</tspan>
+
+      <tspan x="20" dy="35" font-weight="bold" fill="#0f172a">3. Deteksi Koordinat</tspan>
+      <tspan x="20" dy="20">Perpotongan Baris LOW dan Kolom</tspan>
+      <tspan x="20" dy="18">LOW menentukan tombol yang aktif.</tspan>
+    </text>
+
+    <!-- Pin Connection to Arduino Uno -->
+    <rect x="15" y="275" width="260" height="85" fill="#f1f5f9" rx="6" />
+    <text x="25" y="298" font-family="sans-serif" font-size="12px" font-weight="bold" fill="#0f172a">Koneksi Default ke Arduino Uno:</text>
+    <text x="25" y="320" font-family="monospace" font-size="12px" fill="#ef4444">R1->D9,  R2->D8,  R3->D7,  R4->D6</text>
+    <text x="25" y="340" font-family="monospace" font-size="12px" fill="#3b82f6">C1->D5,  C2->D4,  C3->D3,  C4->D2</text>
+  </g>
+</svg>
