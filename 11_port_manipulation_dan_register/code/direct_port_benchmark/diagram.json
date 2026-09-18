@@ -13,8 +13,8 @@
     {
       "type": "wokwi-led",
       "id": "led1",
-      "top": -128.4,
-      "left": 42.2,
+      "top": -145,
+      "left": 115,
       "attrs": {
         "color": "red"
       }
@@ -22,8 +22,8 @@
     {
       "type": "wokwi-resistor",
       "id": "r1",
-      "top": -54.2,
-      "left": 104.75,
+      "top": -70,
+      "left": 140,
       "rotate": 270,
       "attrs": {
         "value": "220"
@@ -32,8 +32,8 @@
     {
       "type": "wokwi-pushbutton",
       "id": "btn1",
-      "top": 44.6,
-      "left": 336,
+      "top": 70,
+      "left": 340,
       "attrs": {
         "color": "blue"
       }

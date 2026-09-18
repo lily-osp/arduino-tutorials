@@ -13,16 +13,16 @@
     {
       "type": "wokwi-relay-module",
       "id": "relay1",
-      "top": -141,
-      "left": 22.8,
+      "top": -140,
+      "left": 30,
       "rotate": 270,
       "attrs": {}
     },
     {
       "type": "wokwi-led",
       "id": "led1",
-      "top": -138,
-      "left": 138.2,
+      "top": -145,
+      "left": 155,
       "attrs": {
         "color": "blue"
       }
@@ -30,8 +30,8 @@
     {
       "type": "wokwi-resistor",
       "id": "r1",
-      "top": -54.2,
-      "left": 162.35,
+      "top": -70,
+      "left": 180,
       "rotate": 270,
       "attrs": {
         "value": "220"

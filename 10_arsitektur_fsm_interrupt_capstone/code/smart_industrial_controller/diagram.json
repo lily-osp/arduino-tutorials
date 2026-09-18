@@ -13,7 +13,7 @@
     {
       "type": "wokwi-lcd1602",
       "id": "lcd1",
-      "top": 256,
+      "top": 270,
       "left": 15.2,
       "attrs": {
         "pins": "i2c"
@@ -22,16 +22,16 @@
     {
       "type": "wokwi-relay-module",
       "id": "relay1",
-      "top": -141,
-      "left": 22.8,
+      "top": -140,
+      "left": 30,
       "rotate": 270,
       "attrs": {}
     },
     {
       "type": "wokwi-led",
       "id": "led1",
-      "top": -138,
-      "left": 138.2,
+      "top": -145,
+      "left": 155,
       "attrs": {
         "color": "yellow"
       }
@@ -39,8 +39,8 @@
     {
       "type": "wokwi-resistor",
       "id": "r1",
-      "top": -54.2,
-      "left": 162.35,
+      "top": -70,
+      "left": 180,
       "rotate": 270,
       "attrs": {
         "value": "220"
@@ -49,8 +49,8 @@
     {
       "type": "wokwi-pushbutton",
       "id": "btn_estop",
-      "top": 44.6,
-      "left": 336,
+      "top": 40,
+      "left": 340,
       "attrs": {
         "color": "red",
         "label": "E-STOP"
@@ -59,8 +59,8 @@
     {
       "type": "wokwi-pushbutton",
       "id": "btn_start",
-      "top": 102.2,
-      "left": 336,
+      "top": 100,
+      "left": 340,
       "attrs": {
         "color": "green",
         "label": "START"
@@ -69,8 +69,8 @@
     {
       "type": "wokwi-pushbutton",
       "id": "btn_reset",
-      "top": 159.8,
-      "left": 336,
+      "top": 160,
+      "left": 340,
       "attrs": {
         "color": "yellow",
         "label": "RESET"

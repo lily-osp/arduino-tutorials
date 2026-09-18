@@ -14,7 +14,7 @@
       "type": "wokwi-membrane-keypad",
       "id": "keypad1",
       "top": 10,
-      "left": -270,
+      "left": -280,
       "attrs": {}
     },
     {
@@ -29,8 +29,8 @@
     {
       "type": "wokwi-led",
       "id": "led1",
-      "top": -138,
-      "left": 70,
+      "top": -145,
+      "left": 155,
       "attrs": {
         "color": "green"
       }
@@ -38,8 +38,8 @@
     {
       "type": "wokwi-resistor",
       "id": "r1",
-      "top": -54.2,
-      "left": 95,
+      "top": -70,
+      "left": 180,
       "rotate": 270,
       "attrs": {
         "value": "220"

@@ -14,7 +14,7 @@
       "type": "wokwi-membrane-keypad",
       "id": "keypad1",
       "top": 10,
-      "left": -270,
+      "left": -280,
       "attrs": {}
     },
     {
@@ -29,15 +29,15 @@
     {
       "type": "wokwi-relay-module",
       "id": "relay1",
-      "top": 10,
-      "left": 350,
+      "top": 0,
+      "left": 340,
       "attrs": {}
     },
     {
       "type": "wokwi-buzzer",
       "id": "bz1",
-      "top": 130,
-      "left": 360,
+      "top": 120,
+      "left": 380,
       "attrs": {
         "hasPassiveBuzzer": "true"
       }
@@ -45,8 +45,8 @@
     {
       "type": "wokwi-resistor",
       "id": "r_bz",
-      "top": 150,
-      "left": 290,
+      "top": 145,
+      "left": 310,
       "attrs": {
         "value": "100"
       }
@@ -54,8 +54,8 @@
     {
       "type": "wokwi-led",
       "id": "led_red",
-      "top": -138,
-      "left": 150,
+      "top": -145,
+      "left": 175,
       "attrs": {
         "color": "red"
       }
@@ -63,8 +63,8 @@
     {
       "type": "wokwi-resistor",
       "id": "r_red",
-      "top": -54.2,
-      "left": 175,
+      "top": -70,
+      "left": 200,
       "rotate": 270,
       "attrs": {
         "value": "220"
@@ -73,8 +73,8 @@
     {
       "type": "wokwi-led",
       "id": "led_grn",
-      "top": -138,
-      "left": 70,
+      "top": -145,
+      "left": 85,
       "attrs": {
         "color": "green"
       }
@@ -82,8 +82,8 @@
     {
       "type": "wokwi-resistor",
       "id": "r_grn",
-      "top": -54.2,
-      "left": 95,
+      "top": -70,
+      "left": 110,
       "rotate": 270,
       "attrs": {
         "value": "220"

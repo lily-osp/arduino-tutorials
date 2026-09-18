@@ -11,29 +11,10 @@
       "attrs": {}
     },
     {
-      "type": "wokwi-buzzer",
-      "id": "bz1",
-      "top": -120,
-      "left": 230,
-      "attrs": {
-        "hasPassiveBuzzer": "true"
-      }
-    },
-    {
-      "type": "wokwi-resistor",
-      "id": "r_bz",
-      "top": -54.2,
-      "left": 235,
-      "rotate": 270,
-      "attrs": {
-        "value": "100"
-      }
-    },
-    {
       "type": "wokwi-led",
       "id": "led1",
-      "top": -138,
-      "left": 138.2,
+      "top": -145,
+      "left": 155,
       "attrs": {
         "color": "yellow"
       }
@@ -41,8 +22,8 @@
     {
       "type": "wokwi-resistor",
       "id": "r_led",
-      "top": -54.2,
-      "left": 162.35,
+      "top": -70,
+      "left": 180,
       "rotate": 270,
       "attrs": {
         "value": "220"
@@ -51,22 +32,41 @@
     {
       "type": "wokwi-pushbutton",
       "id": "btn1",
-      "top": 44.6,
-      "left": 336,
+      "top": 40,
+      "left": 340,
       "attrs": {
         "color": "green",
         "label": "MODE"
+      }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 120,
+      "left": 380,
+      "attrs": {
+        "hasPassiveBuzzer": "true"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_bz",
+      "top": 145,
+      "left": 310,
+      "attrs": {
+        "value": "100"
       }
     }
   ],
   "connections": [
     [
-      "uno:11",
       "r_bz:1",
+      "uno:11",
       "purple",
       [
-        "v-19.2",
-        "h-0.2"
+        "h-10",
+        "v-160",
+        "h-170"
       ]
     ],
     [
@@ -74,17 +74,16 @@
       "bz1:2",
       "purple",
       [
-        "v-20"
+        "h10"
       ]
     ],
     [
       "bz1:1",
-      "uno:GND.1",
+      "uno:GND.3",
       "black",
       [
-        "v20",
         "h-40",
-        "v60"
+        "v-40"
       ]
     ],
     [
