@@ -58,6 +58,8 @@ Jika menggunakan Arduino Uno clone dengan chip USB CH340 di Windows:
 
 ## 3. Navigasi Antarmuka Arduino IDE 2.x
 
+![Tampilan Antarmuka Arduino IDE 2.x](../assets/arduino_ide_dashboard.png)
+
 Jendela utama Arduino IDE 2.x memiliki bilah navigasi vertikal di sisi kiri:
 
 ```text

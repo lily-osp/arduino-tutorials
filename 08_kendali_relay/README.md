@@ -17,6 +17,8 @@ Modul ini membahas cara mengendalikan perangkat berdaya tinggi secara aman mengg
 
 ## 2. Cara Kerja Modul Relay 5V
 
+![Modul Relay 5V Arduino](../assets/relay_5v_module.jpg)
+
 Relay bekerja sebagai sakelar mekanik yang ditarik oleh elektromagnet. Saat arus listrik dialirkan ke kumparan internal (koil), terbentuk medan magnet yang menarik tuas besi ke bawah, menghubungkan pelat kontak sakelar dengan bunyi klik khas.
 
 ```text
@@ -81,6 +83,19 @@ Dalam kendali industri, sakelar relay tidak boleh dibiarkan berganti status terl
 Kita menambahkan dua proteksi software:
 1. **Anti-Chatter Delay**: Membatasi pergantian status relay minimal berjarak 500 milidetik antar aksi.
 2. **Auto-Cutoff Timer**: Jika relay diaktifkan, sistem otomatis mematikannya setelah 10 detik untuk mencegah beban (seperti pemanas atau solenoid) menyala tanpa batas akibat kelalaian pengguna.
+
+```mermaid
+flowchart TD
+    A["Tombol Ditekan"] --> B{"Jeda sejak aksi terakhir<br>>= 500ms (Anti-Chatter)?"}
+    B -- Tidak --> C["Abaikan (Cegah lonjakan kontak)"]
+    B -- Ya --> D{"Status Relay Saat Ini?"}
+    D -- MATI --> E["Nyalakan Relay (Active-LOW)<br>Setel timer auto-off 10s"]
+    D -- AKTIF --> F["Matikan Relay<br>Reset status"]
+    E --> G["Relay Bekerja"]
+    G --> H{"Waktu berjalan<br>>= 10 detik?"}
+    H -- Ya (Timeout) --> F
+    H -- Belum --> G
+```
 
 ---
 

@@ -42,6 +42,21 @@ void loop() {
 }
 ```
 
+```mermaid
+flowchart TD
+    A["Awal Siklus loop()"] --> B["Ambil sekarang = millis()"]
+    B --> C{"(sekarang - waktuLed) >= 500ms?"}
+    C -- Ya --> D["Eksekusi Tugas LED (Heartbeat)"]
+    C -- Tidak --> E{"(sekarang - waktuLcd) >= 250ms?"}
+    D --> E
+    E -- Ya --> F["Eksekusi Tugas Display LCD"]
+    E -- Tidak --> G["Polling Tombol & Evaluasi Flag ISR"]
+    F --> G
+    G --> H["Jalankan Logika Transisi FSM"]
+    H --> I["Selesai Siklus Tanpa CPU Freeze"]
+    I --> A
+```
+
 ---
 
 ## 2. Finite State Machine (FSM)

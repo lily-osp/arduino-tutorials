@@ -95,7 +95,7 @@ Untuk mencegah floating, pin wajib diikat ke tegangan pasti menggunakan:
 
 ### 2.3 Modul Relay 5V
 
-![Struktur Internal Relay Elektromekanik](../assets/electromechanical_relay_internals.jpg)
+![Modul Relay 5V Arduino](../assets/relay_5v_module.jpg)
 
 Relay adalah sakelar elektromekanik yang digerakkan oleh kumparan magnet. Relay memungkinkan sirkuit kecil bertegangan 5V DC pada Arduino untuk mengendalikan perangkat berdaya besar (misalnya lampu rumah 220V AC atau pompa air DC).
 

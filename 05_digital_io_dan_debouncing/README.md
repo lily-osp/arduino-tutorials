@@ -109,6 +109,22 @@ Karena mikrokontroler mengeksekusi instruksi dalam hitungan puluhan nanodetik, m
 Untuk memfilter getaran mekanik ini, kita membuat aturan waktu:
 > *"Jika pembacaan pin berubah status, abaikan perubahan berikutnya sampai sinyal bertahan stabil selama minimal 50 milidetik."*
 
+```mermaid
+flowchart TD
+    A["Baca digitalRead(pin)"] --> B{"Nilai berubah dari<br>siklus sebelumnya?"}
+    B -- Ya --> C["Reset waktuDebounce = millis()"]
+    B -- Tidak --> D{"(millis - waktuDebounce)<br>> 50ms?"}
+    C --> D
+    D -- Belum (Masih Bouncing) --> E["Abaikan (Tunggu stabil)"]
+    D -- Sudah (Stabil) --> F{"Nilai stabil baru<br>berbeda dari status lama?"}
+    F -- Tidak --> E
+    F -- Ya --> G["Update statusStabil = nilai baru"]
+    G --> H{"Status baru == LOW?<br>(Transisi Tekan)"}
+    H -- Ya --> I["Eksekusi Aksi: Toggle LED"]
+    H -- Tidak (Dilepas) --> J["Selesai / Lanjut Loop"]
+    I --> J
+```
+
 ### Program 1: Tombol Toggle LED dengan Debounce Stabil
 Salin dan unggah kode berikut:
 

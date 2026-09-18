@@ -40,6 +40,21 @@ Dua resistor pull-up eksternal ($4.7\text{k}\Omega - 10\text{k}\Omega$) bertugas
 4. **Data Frame (8-bit)**: Data ditransfer byte per byte, masing-masing diikuti 1 bit ACK.
 5. **STOP Condition**: Master melepaskan SDA ke `HIGH` saat SCL berada di logika `HIGH`.
 
+```mermaid
+sequenceDiagram
+    autonumber
+    participant M as Arduino Uno (Master)
+    participant B as Bus I2C (SDA/SCL)
+    participant S as Modul LCD PCF8574 (Slave)
+
+    M->>B: Kondisi START (SDA LOW saat SCL HIGH)
+    M->>S: 7-bit Alamat (0x27) + Bit Write (0)
+    S-->>M: Kirim ACK Bit (Tarik SDA ke LOW)
+    M->>S: Kirim 8-bit Data Byte
+    S-->>M: Kirim ACK Bit
+    M->>B: Kondisi STOP (SDA HIGH saat SCL HIGH)
+```
+
 ---
 
 ## 2. Program 1: I2C Scanner Mandiri
@@ -107,6 +122,14 @@ Mikrokontroler ATmega328P memiliki memori **EEPROM (Electrically Erasable Progra
 ### 3.2 Fungsi `EEPROM.update()` vs `EEPROM.write()`
 * `EEPROM.write(alamat, nilai)`: Selalu menimpa byte baru ke memori terlepas dari apakah nilainya berubah atau tidak.
 * `EEPROM.update(alamat, nilai)`: Membaca isi alamat terlebih dahulu. Jika nilai baru **sama persis** dengan nilai yang sudah ada, operasi tulis **dibatalkan**. Ini sangat menghemat siklus usia pakai EEPROM!
+
+```mermaid
+flowchart TD
+    A["Panggil EEPROM.update(alamat, nilaiBaru)"] --> B["Baca nilaiLama = EEPROM.read(alamat)"]
+    B --> C{"nilaiBaru == nilaiLama?"}
+    C -- Ya (Nilai Sama) --> D["Batalkan Tulis (0 siklus aus)<br>Hemat masa pakai EEPROM"]
+    C -- Tidak (Nilai Berubah) --> E["Tulis nilaiBaru ke sel memori<br>(1 siklus tulis terpakai)"]
+```
 
 ### 3.3 Menyimpan Tipe Data Kompleks: `EEPROM.put()` dan `EEPROM.get()`
 Pustaka bawaan Arduino menyediakan dua fungsi untuk menyimpan struct atau variabel multi-byte secara instan:
