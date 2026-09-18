@@ -55,8 +55,15 @@ Papan plastik berlubang yang digunakan untuk merangkai sirkuit elektronika proto
 ### CH340
 Chip terintegrasi (IC) konverter USB-to-UART murah buatan WCH yang umum digunakan pada papan Arduino Uno dan Nano versi clone/kompatibel.
 
+### CLI (Command Line Interface)
+Antarmuka baris perintah berbasis teks di mana pengguna atau komputer host mengontrol perangkat embedded melalui pengiriman string perintah terstruktur (seperti `RELAY:ON` atau `STATUS`) via port serial.
+
 ### Contact Bounce (Bouncing)
 Fenomena getaran mekanik mikroskopis saat pelat logam sakelar atau tombol pertama kali bersentuhan. Menimbulkan pulsa listrik on-off yang tidak stabil selama $5 - 20\text{ milidetik}$ sebelum benar-benar menempel rapat.
+
+### CTC (Clear Timer on Compare Match)
+Mode kerja hardware timer di mana register pencacah waktu (*counter*) otomatis direset kembali ke nol begitu nilainya mencapai angka target yang ditentukan pada register pembanding (*Compare Match*), memicu interupsi periodik dengan presisi kristal.
+
 
 ### Debouncing
 Metode untuk menyaring dan mengabaikan getaran kontak sakelar mekanik agar penekanan tombol hanya dihitung satu kali. Dapat diselesaikan via software (timer `millis()`) atau hardware (filter low-pass RC).
@@ -66,6 +73,10 @@ Kapasitor kecil (biasanya keramik $0.1\mu\text{F}$ atau $100\text{nF}$) yang dil
 
 ### `delay()`
 Fungsi untuk menghentikan eksekusi program selama jumlah milidetik tertentu. Termasuk fungsi *blocking* yang dihindari pada arsitektur sistem responsif atau industri.
+
+### `DDRx` (Data Direction Register)
+Register perangkat keras 8-bit pada mikrokontroler AVR yang menentukan arah aliran data pin I/O pada port terkait. Menulis bit `1` menjadikan pin sebagai **OUTPUT**, sedangkan menulis bit `0` menjadikannya sebagai **INPUT**.
+
 
 ### Digital I/O
 Pin yang hanya dapat membaca atau mengeluarkan dua tingkatan tegangan biner: logika `HIGH` (mendekati 5V) atau logika `LOW` (mendekati 0V/Ground).
@@ -136,8 +147,18 @@ IC expander I/O 8-bit yang mengubah komunikasi serial I2C (SDA/SCL) menjadi 8 ja
 ### `pinMode()`
 Fungsi inisialisasi di `setup()` untuk menentukan peran pin digital: sebagai masukan (`INPUT`), masukan berhambatan dalam (`INPUT_PULLUP`), atau keluaran daya (`OUTPUT`).
 
+### `PINx` (Input Pins Address Register)
+Register I/O *read-only* pada arsitektur AVR yang merefleksikan level logika tegangan fisik pada pin saat ini. Menulis bit `1` ke alamat register `PINx` akan membalik (*toggle*) output pin terkait secara instan pada level hardware.
+
 ### Polyfuse
 Sekering otomatis pada sirkuit USB Arduino Uno yang memutus aliran listrik jika arus melebihi $500\text{mA}$ (misalnya akibat korsleting) dan otomatis tersambung kembali begitu suhu sekering mendingin.
+
+### `PORTx` (Data Register)
+Register I/O 8-bit pada AVR yang mengatur keluaran level tegangan pin (menulis `1` menghasilkan 5V/HIGH, `0` menghasilkan 0V/LOW jika dikonfigurasi sebagai OUTPUT) atau mengaktifkan resistor pull-up internal jika pin dikonfigurasi sebagai INPUT.
+
+### Prescaler
+Rangkaian pembagi frekuensi clock perangkat keras di dalam mikrokontroler yang memperlambat laju clock timer (misalnya dibagi dengan faktor 8, 64, 256, atau 1024) sehingga counter timer dapat mencatat interval waktu yang jauh lebih panjang tanpa meluap (*overflow*).
+
 
 ### Pull-Up & Pull-Down Resistor
 Resistor bernilai besar ($10\text{k}\Omega - 50\text{k}\Omega$) yang dipasang pada pin input untuk memastikan pin berada pada level tegangan pasti saat sakelar terbuka:
@@ -171,6 +192,9 @@ Protokol komunikasi serial sinkron 4 kabel berkecepatan tinggi (MOSI, MISO, SCK,
 ### SRAM (Static RAM)
 Memori kerja sementara berkapasitas 2 KB (2.048 byte) pada ATmega328P untuk menyimpan variabel aktif runtime. Data hilang saat papan kehilangan daya (*volatile*).
 
+### Sleep Mode (Mode Tidur Rendah Daya)
+Kondisi operasional hemat daya di mana clock CPU dan berbagai periferal internal dinonaktifkan untuk memangkas konsumsi arus hingga ke level mikroampere ($< 1\ \mu\text{A}$), dan hanya dibangunkan kembali oleh pemicu interupsi eksternal atau timer.
+
 ### `String` vs `char[]`
 * **`String`**: Objek C++ dinamis dengan alokasi heap. Berbahaya digunakan pada chip AVR RAM 2KB karena memicu fragmentasi memori (*heap fragmentation*) yang berujung crash acak.
 * **`char[]`**: Array karakter C murni dengan ukuran memori statis tetap. Sangat aman dan direkomendasikan untuk seluruh aplikasi mikrokontroler.
@@ -188,5 +212,9 @@ $$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2}$$
 
 Digunakan untuk membaca sensor resistif (seperti LDR) dan menurunkan level logika 5V ke 3.3V.
 
+### WDT (Watchdog Timer)
+Periferal pewaktu independen dengan osilator internal $128\text{ kHz}$ yang bertugas memonitor kesehatan eksekusi program. Jika program mengalami deadlock atau macet dan gagal mereset WDT dalam jendela waktu yang ditentukan, WDT akan memicu reset hardware otomatis pada mikrokontroler.
+
 ### Wokwi
 Platform simulator sirkuit dan perangkat lunak mikrokontroler berbasis web yang mendukung simulasi penuh Arduino Uno R3, ESP32, LCD I2C, tombol, relay, dan komponen elektronika tanpa membutuhkan perangkat fisik.
+

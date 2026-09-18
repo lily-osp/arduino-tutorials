@@ -25,10 +25,11 @@ Kamu hanya membutuhkan 5 jenis komponen berikut untuk mencoba seluruh materi dar
 
 ---
 
-## Jalur Belajar (10 Modul)
+## Jalur Belajar (15 Modul)
 
-Ikuti materi secara berurutan. Konsep di modul lanjutan mengandalkan pemahaman dari modul sebelumnya.
+Materi disusun terstruktur dalam 3 tingkatan. Ikuti materi secara berurutan:
 
+### Tingkat 1: Fondasi Elektronika & Pemrograman C/C++
 | Modul | Materi Pokok | Praktik yang Dibuat |
 |---|---|---|
 | [**Modul 01**](01_pengenalan_dan_hardware/README.md) | Sejarah Arduino, perbandingan board, dan anatomi sirkuit Uno R3 | Identifikasi komponen fisik dan batasan pin board |
@@ -36,31 +37,37 @@ Ikuti materi secara berurutan. Konsep di modul lanjutan mengandalkan pemahaman d
 | [**Modul 03**](03_dasar_elektronika/README.md) | Hukum Ohm, perhitungan resistor LED, cara kerja switch, dan proteksi relay | Menghitung nilai resistor dan merakit sirkuit aman |
 | [**Modul 04**](04_pemrograman_embedded_cpp/README.md) | Siklus `setup()`/`loop()`, tipe data hemat memori, dan bahaya `String` | Menulis program C/C++ efisien untuk RAM 2KB |
 | [**Modul 05**](05_digital_io_dan_debouncing/README.md) | Digital I/O, `INPUT_PULLUP`, contact bounce, dan software debouncing | Tombol tekan stabil untuk menyalakan LED tanpa getar mekanik |
+
+### Tingkat 2: Kontrol Aktuator, Sinyal & Komunikasi Serial
+| Modul | Materi Pokok | Praktik yang Dibuat |
+|---|---|---|
 | [**Modul 06**](06_pwm_dan_dimmer/README.md) | Prinsip kerja PWM, duty cycle, fungsi `analogWrite()`, dan timer | Pengatur kecerahan LED bertingkat dan efek breathing |
 | [**Modul 07**](07_serial_dan_i2c_lcd1602/README.md) | Protokol UART, Serial Plotter, wiring I2C, dan library LCD 1602 | Mengirim perintah dari PC dan menampilkan karakter kustom di LCD |
 | [**Modul 08**](08_kendali_relay/README.md) | Struktur modul relay 5V, optoisolator, logika Active-LOW, dan terminal NO/NC | Sakelar beban listrik aman dengan indikator status |
 | [**Modul 09**](09_bus_i2c_dan_eeprom/README.md) | Scan alamat bus I2C (`Wire.h`) dan simpan status ke memori EEPROM internal | Menyimpan status sakelar agar tidak hilang saat mati lampu |
 | [**Modul 10**](10_arsitektur_fsm_interrupt_capstone/README.md) | Non-blocking `millis()`, Finite State Machine, dan hardware interrupt | *Capstone*: Pengendali beban industri dengan mode timer dan tombol darurat |
 
+### Tingkat 3: Arsitektur Tingkat Lanjut & Bare-Metal AVR
+| Modul | Materi Pokok | Praktik yang Dibuat |
+|---|---|---|
+| [**Modul 11**](11_port_manipulation_dan_register/README.md) | Direct Port Manipulation (`DDRx`, `PORTx`, `PINx`) dan operasi bitwise AVR | Benchmark kecepatan switching I/O: 50x lebih cepat dari `digitalWrite()` |
+| [**Modul 12**](12_timer_interrupt_dan_hardware_timers/README.md) | Anatomi Timer0/Timer1/Timer2 hardware, mode CTC, kalkulasi prescaler | Clock presisi kristal 1.000 Hz independen tanpa jitter `loop()` |
+| [**Modul 13**](13_low_power_dan_watchdog_timer/README.md) | Mode tidur hemat energi (`SLEEP_MODE_PWR_DOWN`) dan Watchdog Timer (WDT) | Sistem fault-tolerant: auto-sleep idle, bangun via INT0, auto-reboot saat hang |
+| [**Modul 14**](14_serial_cli_dan_command_parser/README.md) | Command-Line Interface (CLI) serial non-blocking dan telemetri JSON | Mengontrol relay dan dimmer via terminal teks komputer tanpa blocking |
+| [**Modul 15**](15_sistem_menu_lcd_dan_capstone_lanjutan/README.md) | Sistem menu LCD navigasi 2 tombol, EEPROM state, dan E-STOP interrupt | *Advanced Capstone*: Stasiun kendali otomasi industri cerdas terintegrasi |
+
 ---
 
-## Cara Belajar yang Efektif
+## Dokumen Pendukung & Referensi Cepat
 
-1. Baca penjelasan konsep dan skema pinout sebelum menyalakan board.
-2. Rangkai komponen saat kabel USB belum tersambung ke komputer untuk menghindari risiko korsleting.
-3. Ketik ulang kode program sendiri di Arduino IDE agar terbiasa dengan sintaks dan penanganan error.
-4. Perhatikan pesan kesalahan di jendela output bawah Arduino IDE jika kode gagal dikompilasi atau gagal diunggah.
-
----
-
-## Glosarium Istilah
-
-Menemukan istilah teknis yang belum familiar seperti *optocoupler*, *pull-up resistor*, *duty cycle*, *contact bounce*, atau *Harvard Architecture*? Buka panduan istilah terpusat di:
-👉 [**GLOSARIUM.md**](GLOSARIUM.md)
+* 📖 [**GLOSARIUM.md**](GLOSARIUM.md) — Kamus istilah A–Z elektronika, arsitektur chip AVR, dan embedded C++.
+* 🛠️ [**ERRORS.md**](ERRORS.md) — Panduan pemecahan masalah: error kompilasi, port serial Linux, avrdude, dan bug hardware.
+* ⚡ [**CHEATSHEET.md**](CHEATSHEET.md) — Lembar sontekan satu halaman: pinout Uno R3, batas elektrik, register bitwise, dan rumus.
 
 ---
 
 ## Lisensi
 
 Seluruh materi dan contoh kode bebas digunakan, dipelajari, dan dibagikan kembali di bawah lisensi [**MIT License**](LICENSE).
+
 
