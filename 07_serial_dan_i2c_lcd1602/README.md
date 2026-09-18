@@ -237,6 +237,10 @@ void perbaruiTampilanLcd() {
 ### Mengapa Kita Menggunakan `perluUpdateLcd`?
 Mengirim data ke layar LCD melalui bus I2C memakan waktu sekitar beberapa milidetik. Jika kita memanggil `lcd.print()` berulang-ulang di setiap siklus `loop()` tanpa henti, tampilan layar akan berkedip (*flicker*) dan pemrosesan tombol menjadi lambat. Dengan teknik flag `perluUpdateLcd`, layar **hanya digambar ulang saat data benar-benar berubah**.
 
+### Simulasi Interaktif Wokwi:
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 07: LCD 1602 I2C & Tombol](https://wokwi.com/projects/475524767366901761)
+* File diagram sirkuit dan kode program tersedia di direktori [code/lcd1602_interactive/](code/lcd1602_interactive/).
+
 ---
 
 ## 7. Ringkasan

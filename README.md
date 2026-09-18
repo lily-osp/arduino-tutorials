@@ -32,38 +32,38 @@ Seluruh materi dari Modul 01 sampai Modul 18 disusun menggunakan komponen standa
 Materi disusun terstruktur dalam 4 tingkatan. Ikuti materi secara berurutan:
 
 ### Tingkat 1: Fondasi Elektronika & Pemrograman C/C++
-| Modul | Materi Pokok | Praktik yang Dibuat |
-|---|---|---|
-| [**Modul 01**](01_pengenalan_dan_hardware/README.md) | Sejarah Arduino, perbandingan board, dan anatomi sirkuit Uno R3 | Identifikasi komponen fisik dan batasan pin board |
-| [**Modul 02**](02_arduino_ide_toolchain/README.md) | Arduino IDE 2.x, driver USB, Boards Manager, Serial Monitor, dan toolchain | Menyiapkan IDE, mendeteksi port, dan memahami proses upload |
-| [**Modul 03**](03_dasar_elektronika/README.md) | Hukum Ohm, perhitungan resistor LED, cara kerja switch, dan proteksi relay | Menghitung nilai resistor dan merakit sirkuit aman |
-| [**Modul 04**](04_pemrograman_embedded_cpp/README.md) | Siklus `setup()`/`loop()`, tipe data hemat memori, dan bahaya `String` | Menulis program C/C++ efisien untuk RAM 2KB |
-| [**Modul 05**](05_digital_io_dan_debouncing/README.md) | Digital I/O, `INPUT_PULLUP`, contact bounce, dan software debouncing | Tombol tekan stabil untuk menyalakan LED tanpa getar mekanik |
+| Modul | Materi Pokok | Praktik yang Dibuat | Simulasi Wokwi |
+|---|---|---|:---:|
+| [**Modul 01**](01_pengenalan_dan_hardware/README.md) | Sejarah Arduino, perbandingan board, dan anatomi sirkuit Uno R3 | Identifikasi komponen fisik dan batasan pin board | Teori |
+| [**Modul 02**](02_arduino_ide_toolchain/README.md) | Arduino IDE 2.x, driver USB, Boards Manager, Serial Monitor, dan toolchain | Menyiapkan IDE, mendeteksi port, dan memahami proses upload | [Buka Wokwi](https://wokwi.com/projects/475523383202277377) |
+| [**Modul 03**](03_dasar_elektronika/README.md) | Hukum Ohm, perhitungan resistor LED, cara kerja switch, dan proteksi relay | Menghitung nilai resistor dan merakit sirkuit aman | Teori |
+| [**Modul 04**](04_pemrograman_embedded_cpp/README.md) | Siklus `setup()`/`loop()`, tipe data hemat memori, dan bahaya `String` | Menulis program C/C++ efisien untuk RAM 2KB | Teori |
+| [**Modul 05**](05_digital_io_dan_debouncing/README.md) | Digital I/O, `INPUT_PULLUP`, contact bounce, dan software debouncing | Tombol tekan stabil untuk menyalakan LED tanpa getar mekanik | [Buka Wokwi](https://wokwi.com/projects/475523604324977665) |
 
 ### Tingkat 2: Kontrol Aktuator, Sinyal & Komunikasi Serial
-| Modul | Materi Pokok | Praktik yang Dibuat |
-|---|---|---|
-| [**Modul 06**](06_pwm_dan_dimmer/README.md) | Prinsip kerja PWM, duty cycle, fungsi `analogWrite()`, dan timer | Pengatur kecerahan LED bertingkat dan efek breathing |
-| [**Modul 07**](07_serial_dan_i2c_lcd1602/README.md) | Protokol UART, Serial Plotter, wiring I2C, dan library LCD 1602 | Mengirim perintah dari PC dan menampilkan karakter kustom di LCD |
-| [**Modul 08**](08_kendali_relay/README.md) | Struktur modul relay 5V, optoisolator, logika Active-LOW, dan terminal NO/NC | Sakelar beban listrik aman dengan indikator status |
-| [**Modul 09**](09_bus_i2c_dan_eeprom/README.md) | Scan alamat bus I2C (`Wire.h`) dan simpan status ke memori EEPROM internal | Menyimpan status sakelar agar tidak hilang saat mati lampu |
-| [**Modul 10**](10_arsitektur_fsm_interrupt_capstone/README.md) | Non-blocking `millis()`, Finite State Machine, dan hardware interrupt | *Capstone*: Pengendali beban industri dengan mode timer dan tombol darurat |
+| Modul | Materi Pokok | Praktik yang Dibuat | Simulasi Wokwi |
+|---|---|---|:---:|
+| [**Modul 06**](06_pwm_dan_dimmer/README.md) | Prinsip kerja PWM, duty cycle, fungsi `analogWrite()`, dan timer | Pengatur kecerahan LED bertingkat dan efek breathing | [Buka Wokwi](https://wokwi.com/projects/475523980835133441) |
+| [**Modul 07**](07_serial_dan_i2c_lcd1602/README.md) | Protokol UART, Serial Plotter, wiring I2C, dan library LCD 1602 | Mengirim perintah dari PC dan menampilkan karakter kustom di LCD | [Buka Wokwi](https://wokwi.com/projects/475524767366901761) |
+| [**Modul 08**](08_kendali_relay/README.md) | Struktur modul relay 5V, optoisolator, logika Active-LOW, dan terminal NO/NC | Sakelar beban listrik aman dengan indikator status | [Buka Wokwi](https://wokwi.com/projects/475525208595155969) |
+| [**Modul 09**](09_bus_i2c_dan_eeprom/README.md) | Scan alamat bus I2C (`Wire.h`) dan simpan status ke memori EEPROM internal | Menyimpan status sakelar agar tidak hilang saat mati lampu | [diagram.json](09_bus_i2c_dan_eeprom/code/eeprom_state_persistence/diagram.json) |
+| [**Modul 10**](10_arsitektur_fsm_interrupt_capstone/README.md) | Non-blocking `millis()`, Finite State Machine, dan hardware interrupt | *Capstone*: Pengendali beban industri dengan mode timer dan tombol darurat | [diagram.json](10_arsitektur_fsm_interrupt_capstone/code/smart_industrial_controller/diagram.json) |
 
 ### Tingkat 3: Arsitektur Tingkat Lanjut & Bare-Metal AVR
-| Modul | Materi Pokok | Praktik yang Dibuat |
-|---|---|---|
-| [**Modul 11**](11_port_manipulation_dan_register/README.md) | Direct Port Manipulation (`DDRx`, `PORTx`, `PINx`) dan operasi bitwise AVR | Benchmark kecepatan switching I/O: 50x lebih cepat dari `digitalWrite()` |
-| [**Modul 12**](12_timer_interrupt_dan_hardware_timers/README.md) | Anatomi Timer0/Timer1/Timer2 hardware, mode CTC, kalkulasi prescaler | Clock presisi kristal 1.000 Hz independen tanpa jitter `loop()` |
-| [**Modul 13**](13_low_power_dan_watchdog_timer/README.md) | Mode tidur hemat energi (`SLEEP_MODE_PWR_DOWN`) dan Watchdog Timer (WDT) | Sistem fault-tolerant: auto-sleep idle, bangun via INT0, auto-reboot saat hang |
-| [**Modul 14**](14_serial_cli_dan_command_parser/README.md) | Command-Line Interface (CLI) serial non-blocking dan telemetri JSON | Mengontrol relay dan dimmer via terminal teks komputer tanpa blocking |
-| [**Modul 15**](15_sistem_menu_lcd_dan_capstone_lanjutan/README.md) | Sistem menu LCD navigasi 2 tombol, EEPROM state, dan E-STOP interrupt | *Advanced Capstone*: Stasiun kendali otomasi industri cerdas terintegrasi |
+| Modul | Materi Pokok | Praktik yang Dibuat | Simulasi Wokwi |
+|---|---|---|:---:|
+| [**Modul 11**](11_port_manipulation_dan_register/README.md) | Direct Port Manipulation (`DDRx`, `PORTx`, `PINx`) dan operasi bitwise AVR | Benchmark kecepatan switching I/O: 50x lebih cepat dari `digitalWrite()` | [diagram.json](11_port_manipulation_dan_register/code/direct_port_benchmark/diagram.json) |
+| [**Modul 12**](12_timer_interrupt_dan_hardware_timers/README.md) | Anatomi Timer0/Timer1/Timer2 hardware, mode CTC, kalkulasi prescaler | Clock presisi kristal 1.000 Hz independen tanpa jitter `loop()` | [diagram.json](12_timer_interrupt_dan_hardware_timers/code/timer1_precision_clock/diagram.json) |
+| [**Modul 13**](13_low_power_dan_watchdog_timer/README.md) | Mode tidur hemat energi (`SLEEP_MODE_PWR_DOWN`) dan Watchdog Timer (WDT) | Sistem fault-tolerant: auto-sleep idle, bangun via INT0, auto-reboot saat hang | [diagram.json](13_low_power_dan_watchdog_timer/code/power_saving_wdt/diagram.json) |
+| [**Modul 14**](14_serial_cli_dan_command_parser/README.md) | Command-Line Interface (CLI) serial non-blocking dan telemetri JSON | Mengontrol relay dan dimmer via terminal teks komputer tanpa blocking | [diagram.json](14_serial_cli_dan_command_parser/code/serial_cli_controller/diagram.json) |
+| [**Modul 15**](15_sistem_menu_lcd_dan_capstone_lanjutan/README.md) | Sistem menu LCD navigasi 2 tombol, EEPROM state, dan E-STOP interrupt | *Advanced Capstone*: Stasiun kendali otomasi industri cerdas terintegrasi | [diagram.json](15_sistem_menu_lcd_dan_capstone_lanjutan/code/advanced_industrial_station/diagram.json) |
 
 ### Tingkat 4: Periferal Matriks & Sistem Keamanan Terpadu
-| Modul | Materi Pokok | Praktik yang Dibuat |
-|---|---|---|
-| [**Modul 16**](16_pembangkit_frekuensi_dan_buzzer/README.md) | Fisika keramik piezo, buzzer aktif vs pasif, register Timer 2 `tone()` | Pembangkit audio efek non-blocking: beep klik, jingle sukses, sirine sweep |
-| [**Modul 17**](17_keypad_matriks_4x4_scanning/README.md) | Grid multiplexing 16 tombol dengan 8 pin, algoritma row-column sweep | Scanner keypad mandiri tanpa library eksternal dengan feedback LCD I2C |
-| [**Modul 18**](18_sistem_keamanan_keypad_pin_access/README.md) | Integrasi 7 periferal: Keypad 4x4, LCD, Buzzer, Relay, LED, EEPROM | *Grand Capstone*: Sistem kontrol akses kunci pintu PIN dengan proteksi lockout |
+| Modul | Materi Pokok | Praktik yang Dibuat | Simulasi Wokwi |
+|---|---|---|:---:|
+| [**Modul 16**](16_pembangkit_frekuensi_dan_buzzer/README.md) | Fisika keramik piezo, buzzer aktif vs pasif, register Timer 2 `tone()` | Pembangkit audio efek non-blocking: beep klik, jingle sukses, sirine sweep | [diagram.json](16_pembangkit_frekuensi_dan_buzzer/code/buzzer_alarm_melody/diagram.json) |
+| [**Modul 17**](17_keypad_matriks_4x4_scanning/README.md) | Grid multiplexing 16 tombol dengan 8 pin, algoritma row-column sweep | Scanner keypad mandiri tanpa library eksternal dengan feedback LCD I2C | [diagram.json](17_keypad_matriks_4x4_scanning/code/keypad_matrix_scanner/diagram.json) |
+| [**Modul 18**](18_sistem_keamanan_keypad_pin_access/README.md) | Integrasi 7 periferal: Keypad 4x4, LCD, Buzzer, Relay, LED, EEPROM | *Grand Capstone*: Sistem kontrol akses kunci pintu PIN dengan proteksi lockout | [diagram.json](18_sistem_keamanan_keypad_pin_access/code/keypad_security_access_controller/diagram.json) |
 
 
 ## Dokumen Pendukung & Referensi Cepat

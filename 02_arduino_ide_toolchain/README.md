@@ -190,9 +190,8 @@ void loop() {
 ## 7. Alternatif Modern: Simulasi Wokwi
 
 Jika Anda sedang tidak membawa board fisik atau ingin memverifikasi kode tanpa risiko merusak komponen, gunakan simulator web **Wokwi**:
-1. Buka [wokwi.com](https://wokwi.com).
-2. Pilih template **Arduino Uno**.
-3. Anda langsung mendapatkan editor kode dan kanvas sirkuit virtual lengkap. Anda bisa menambahkan LED, resistor, tombol, modul LCD I2C, hingga relay secara instan di peramban tanpa instalasi apa pun.
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 02: Blink Test](https://wokwi.com/projects/475523383202277377)
+* File diagram sirkuit dan kode program juga tersedia di direktori lokal [code/blink_test/](code/blink_test/).
 
 ---
 

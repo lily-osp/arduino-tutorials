@@ -191,6 +191,10 @@ void laporKecerahan() {
 }
 ```
 
+### Simulasi Interaktif Wokwi:
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 06: LED Dimmer PWM](https://wokwi.com/projects/475523980835133441)
+* File diagram sirkuit dan kode program tersedia di direktori [code/led_dimmer_buttons/](code/led_dimmer_buttons/).
+
 ---
 
 ## 5. Ringkasan

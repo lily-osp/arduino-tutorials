@@ -3,92 +3,45 @@
   "author": "Azzar Budiyanto",
   "editor": "wokwi",
   "parts": [
-    {
-      "type": "wokwi-arduino-uno",
-      "id": "uno",
-      "top": 0,
-      "left": 0,
-      "attrs": {}
-    },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
     {
       "type": "wokwi-led",
       "id": "led1",
-      "top": -60,
-      "left": 160,
-      "attrs": {
-        "color": "blue"
-      }
+      "top": -138,
+      "left": 109.4,
+      "attrs": { "color": "blue" }
     },
     {
       "type": "wokwi-resistor",
       "id": "r1",
-      "top": -30,
-      "left": 160,
-      "attrs": {
-        "value": "220"
-      }
+      "top": -44.6,
+      "left": 133.55,
+      "rotate": 270,
+      "attrs": { "value": "220" }
     },
     {
       "type": "wokwi-pushbutton",
       "id": "btn_up",
-      "top": 100,
-      "left": -90,
-      "attrs": {
-        "color": "green"
-      }
+      "top": 25.4,
+      "left": 316.8,
+      "attrs": { "color": "green" }
     },
     {
       "type": "wokwi-pushbutton",
       "id": "btn_down",
-      "top": 160,
-      "left": -90,
-      "attrs": {
-        "color": "red"
-      }
+      "top": 92.6,
+      "left": 316.8,
+      "attrs": { "color": "red" }
     }
   ],
   "connections": [
-    [
-      "uno:9",
-      "r1:1",
-      "blue",
-      []
-    ],
-    [
-      "r1:2",
-      "led1:A",
-      "blue",
-      []
-    ],
-    [
-      "led1:C",
-      "uno:GND.1",
-      "black",
-      []
-    ],
-    [
-      "uno:2",
-      "btn_up:2.l",
-      "green",
-      []
-    ],
-    [
-      "btn_up:1.l",
-      "uno:GND.2",
-      "black",
-      []
-    ],
-    [
-      "uno:3",
-      "btn_down:2.l",
-      "orange",
-      []
-    ],
-    [
-      "btn_down:1.l",
-      "uno:GND.2",
-      "black",
-      []
-    ]
-  ]
+    [ "uno:9", "r1:1", "blue", [] ],
+    [ "r1:2", "led1:A", "blue", [ "v-8.4", "h-28.8" ] ],
+    [ "led1:C", "uno:GND.1", "black", [] ],
+    [ "uno:2", "btn_up:1.l", "violet", [ "v0" ] ],
+    [ "btn_down:1.l", "uno:3", "orange", [ "h0" ] ],
+    [ "btn_up:2.l", "btn_down:2.l", "black", [ "h-28.8", "v67.4" ] ],
+    [ "uno:GND.3", "btn_down:2.l", "black", [ "v-47.5", "h109", "v-19.2" ] ]
+  ],
+  "dependencies": {}
 }

@@ -6,15 +6,15 @@
     {
       "type": "wokwi-arduino-uno",
       "id": "uno",
-      "top": 0,
-      "left": 0,
+      "top": 0.6,
+      "left": -0.6,
       "attrs": {}
     },
     {
       "type": "wokwi-buzzer",
       "id": "bz1",
-      "top": 120,
-      "left": 160,
+      "top": -120,
+      "left": 230,
       "attrs": {
         "hasPassiveBuzzer": "true"
       }
@@ -22,26 +22,18 @@
     {
       "type": "wokwi-resistor",
       "id": "r_bz",
-      "top": 90,
-      "left": 160,
+      "top": -54.2,
+      "left": 235,
+      "rotate": 270,
       "attrs": {
         "value": "100"
       }
     },
     {
-      "type": "wokwi-pushbutton",
-      "id": "btn1",
-      "top": 120,
-      "left": -90,
-      "attrs": {
-        "color": "green"
-      }
-    },
-    {
       "type": "wokwi-led",
       "id": "led1",
-      "top": -60,
-      "left": 140,
+      "top": -138,
+      "left": 138.2,
       "attrs": {
         "color": "yellow"
       }
@@ -49,10 +41,21 @@
     {
       "type": "wokwi-resistor",
       "id": "r_led",
-      "top": -30,
-      "left": 140,
+      "top": -54.2,
+      "left": 162.35,
+      "rotate": 270,
       "attrs": {
         "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 44.6,
+      "left": 336,
+      "attrs": {
+        "color": "green",
+        "label": "MODE"
       }
     }
   ],
@@ -61,31 +64,28 @@
       "uno:11",
       "r_bz:1",
       "purple",
-      []
+      [
+        "v-19.2",
+        "h-0.2"
+      ]
     ],
     [
       "r_bz:2",
       "bz1:2",
       "purple",
-      []
+      [
+        "v-20"
+      ]
     ],
     [
       "bz1:1",
       "uno:GND.1",
       "black",
-      []
-    ],
-    [
-      "uno:2",
-      "btn1:2.l",
-      "green",
-      []
-    ],
-    [
-      "btn1:1.l",
-      "uno:GND.2",
-      "black",
-      []
+      [
+        "v20",
+        "h-40",
+        "v60"
+      ]
     ],
     [
       "uno:6",
@@ -97,13 +97,36 @@
       "r_led:2",
       "led1:A",
       "gold",
-      []
+      [
+        "v-18"
+      ]
     ],
     [
       "led1:C",
       "uno:GND.1",
       "black",
-      []
+      [
+        "h-18.8",
+        "v86.4",
+        "h-19.5"
+      ]
+    ],
+    [
+      "uno:2",
+      "btn1:1.l",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "btn1:2.l",
+      "uno:GND.3",
+      "black",
+      [
+        "v0"
+      ]
     ]
-  ]
+  ],
+  "dependencies": {}
 }

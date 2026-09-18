@@ -237,6 +237,10 @@ void perbaruiTampilanLcd(int sisaDetik) {
 }
 ```
 
+### Simulasi Interaktif Wokwi:
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 08: Kendali Relay 5V & Auto-Cutoff](https://wokwi.com/projects/475525208595155969)
+* File diagram sirkuit dan kode program tersedia di direktori [code/relay_timer_controller/](code/relay_timer_controller/).
+
 ---
 
 ## 6. Ringkasan

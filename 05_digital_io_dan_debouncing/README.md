@@ -185,6 +185,11 @@ void loop() {
 2. `if (statusTombolSekarang == LOW)`: Memastikan aksi pembalikan LED (`statusLed = !statusLed`) hanya dieksekusi **satu kali pada momen tombol pertama kali menyentuh ground**, bukan berulang-ulang selama tombol ditahan.
 3. Seluruh proses ini berjalan tanpa menggunakan `delay()`, sehingga CPU mikrokontroler tidak pernah terkunci.
 
+### Simulasi Interaktif Wokwi:
+Rangkaian tombol dan software debouncing ini dapat langsung diuji di simulator web:
+* **Tautan Proyek Simulasi**: [Simulasi Wokwi - Modul 05: Button Debounce Toggle](https://wokwi.com/projects/475523604324977665)
+* File diagram dan kode program tersedia di direktori [code/button_toggle/](code/button_toggle/).
+
 ---
 
 ## 6. Ringkasan

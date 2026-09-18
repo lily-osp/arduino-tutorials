@@ -6,15 +6,15 @@
     {
       "type": "wokwi-arduino-uno",
       "id": "uno",
-      "top": 0,
-      "left": 0,
+      "top": 0.6,
+      "left": -0.6,
       "attrs": {}
     },
     {
       "type": "wokwi-lcd1602",
       "id": "lcd1",
-      "top": -160,
-      "left": 30,
+      "top": 256,
+      "left": 15.2,
       "attrs": {
         "pins": "i2c"
       }
@@ -22,15 +22,16 @@
     {
       "type": "wokwi-relay-module",
       "id": "relay1",
-      "top": -140,
-      "left": 310,
+      "top": -141,
+      "left": 22.8,
+      "rotate": 270,
       "attrs": {}
     },
     {
       "type": "wokwi-led",
       "id": "led1",
-      "top": -40,
-      "left": 140,
+      "top": -138,
+      "left": 138.2,
       "attrs": {
         "color": "yellow"
       }
@@ -38,8 +39,9 @@
     {
       "type": "wokwi-resistor",
       "id": "r1",
-      "top": -10,
-      "left": 140,
+      "top": -54.2,
+      "left": 162.35,
+      "rotate": 270,
       "attrs": {
         "value": "220"
       }
@@ -47,28 +49,31 @@
     {
       "type": "wokwi-pushbutton",
       "id": "btn_estop",
-      "top": 80,
-      "left": -90,
+      "top": 44.6,
+      "left": 336,
       "attrs": {
-        "color": "red"
+        "color": "red",
+        "label": "E-STOP"
       }
     },
     {
       "type": "wokwi-pushbutton",
       "id": "btn_start",
-      "top": 140,
-      "left": -90,
+      "top": 102.2,
+      "left": 336,
       "attrs": {
-        "color": "green"
+        "color": "green",
+        "label": "START"
       }
     },
     {
       "type": "wokwi-pushbutton",
       "id": "btn_reset",
-      "top": 200,
-      "left": -90,
+      "top": 159.8,
+      "left": 336,
       "attrs": {
-        "color": "yellow"
+        "color": "yellow",
+        "label": "RESET"
       }
     }
   ],
@@ -77,43 +82,68 @@
       "lcd1:VCC",
       "uno:5V",
       "red",
-      []
+      [
+        "h-19.2",
+        "v-57.5",
+        "h159.4"
+      ]
     ],
     [
       "lcd1:GND",
       "uno:GND.2",
       "black",
-      []
+      [
+        "h-9.6",
+        "v-38.4",
+        "h159.3"
+      ]
     ],
     [
       "lcd1:SDA",
       "uno:A4",
       "blue",
-      []
+      [
+        "h-28.8",
+        "v-76.6",
+        "h255"
+      ]
     ],
     [
       "lcd1:SCL",
       "uno:A5",
       "yellow",
-      []
+      [
+        "h-38.4",
+        "v-95.7",
+        "h274.1"
+      ]
     ],
     [
       "relay1:VCC",
       "uno:5V",
       "red",
-      []
+      [
+        "v28.8",
+        "h82.6"
+      ]
     ],
     [
       "relay1:GND",
       "uno:GND.1",
       "black",
-      []
+      [
+        "v38.4",
+        "h28.1"
+      ]
     ],
     [
       "relay1:IN",
       "uno:8",
       "purple",
-      []
+      [
+        "v19.2",
+        "h76.2"
+      ]
     ],
     [
       "uno:7",
@@ -125,49 +155,70 @@
       "r1:2",
       "led1:A",
       "gold",
-      []
+      [
+        "v-18"
+      ]
     ],
     [
       "led1:C",
       "uno:GND.1",
       "black",
-      []
+      [
+        "h-18.8",
+        "v86.4",
+        "h-19.5"
+      ]
     ],
     [
       "uno:2",
-      "btn_estop:2.l",
-      "red",
-      []
-    ],
-    [
       "btn_estop:1.l",
-      "uno:GND.3",
-      "black",
-      []
+      "red",
+      [
+        "v0"
+      ]
     ],
     [
       "uno:3",
-      "btn_start:2.l",
-      "green",
-      []
-    ],
-    [
       "btn_start:1.l",
-      "uno:GND.3",
-      "black",
-      []
+      "green",
+      [
+        "h0"
+      ]
     ],
     [
       "uno:4",
-      "btn_reset:2.l",
+      "btn_reset:1.l",
       "orange",
-      []
+      [
+        "h0"
+      ]
     ],
     [
-      "btn_reset:1.l",
-      "uno:GND.3",
+      "btn_estop:2.l",
+      "btn_start:2.l",
       "black",
-      []
+      [
+        "h-19.2",
+        "v57.8"
+      ]
+    ],
+    [
+      "btn_start:2.l",
+      "btn_reset:2.l",
+      "black",
+      [
+        "h-19.2",
+        "v57.8"
+      ]
+    ],
+    [
+      "uno:GND.3",
+      "btn_start:2.l",
+      "black",
+      [
+        "v0"
+      ]
     ]
-  ]
+  ],
+  "dependencies": {}
 }
