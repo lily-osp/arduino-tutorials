@@ -53,6 +53,14 @@ Ikuti materi secara berurutan. Konsep di modul lanjutan mengandalkan pemahaman d
 
 ---
 
+## Glosarium Istilah
+
+Menemukan istilah teknis yang belum familiar seperti *optocoupler*, *pull-up resistor*, *duty cycle*, *contact bounce*, atau *Harvard Architecture*? Buka panduan istilah terpusat di:
+👉 [**GLOSARIUM.md**](GLOSARIUM.md)
+
+---
+
 ## Lisensi
 
-Seluruh materi dan contoh kode bebas digunakan, dipelajari, dan dibagikan kembali di bawah lisensi **MIT License**.
+Seluruh materi dan contoh kode bebas digunakan, dipelajari, dan dibagikan kembali di bawah lisensi [**MIT License**](LICENSE).
+
