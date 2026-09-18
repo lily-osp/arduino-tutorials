@@ -1,5 +1,7 @@
 # Tutorial Arduino Lengkap: Dari Nol sampai Menengah
 
+![Blotcat initializing an Arduino Uno circuit with a jumper wire and glowing LED](assets/blotcat_arduino_hero.jpg)
+
 Panduan praktik pemrograman mikrokontroler dengan Arduino Uno R3. Materi disusun bertahap mulai dari pemahaman sirkuit board, instalasi lingkungan kerja, pemrograman C/C++, hingga pembuatan sistem otomasi berbasis Finite State Machine (FSM) dan interrupt.
 
 Semua contoh sirkuit dan kode di tutorial ini dirancang khusus agar dapat dipraktikkan langsung menggunakan satu set komponen standar yang terjangkau.

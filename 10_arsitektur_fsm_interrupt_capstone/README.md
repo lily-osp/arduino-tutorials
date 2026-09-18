@@ -6,6 +6,8 @@ Modul pamungkas ini menyatukan seluruh pengetahuan yang telah kita pelajari dari
 
 ## 1. Menyingkirkan `delay()`: Multitasking Kooperatif
 
+![Blotcat frozen in delay ice versus multitasking with millis](../assets/blotcat_delay_freeze.jpg)
+
 Di modul-modul awal, fungsi `delay()` sering digunakan untuk menunggu waktu. Namun, pada sistem industri nyata, `delay()` adalah pantangan fatal karena **membekukan CPU mikrokontroler secara total**.
 
 Jika Anda menulis `delay(5000)`:
@@ -92,6 +94,8 @@ void jalankanFsm() {
 ---
 
 ## 3. Hardware External Interrupt
+
+![Blotcat triggering hardware emergency stop interrupt](../assets/blotcat_emergency_interrupt.jpg)
 
 Pada aplikasi keselamatan kritis (seperti tombol Emergency Stop), kita tidak boleh mengandalkan pembacaan polling di dalam `loop()` karena pembacaan bisa terlambat beberapa milidetik jika sistem sedang sibuk mengirim data ke bus I2C LCD.
 

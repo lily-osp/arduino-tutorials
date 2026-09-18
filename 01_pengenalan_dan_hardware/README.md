@@ -49,6 +49,8 @@ Arduino Uno R3 adalah varian paling umum untuk belajar, tetapi ekosistem Arduino
 
 ## 3. Anatomi Fisik Arduino Uno R3
 
+![Papan Asli Arduino Uno R3](../assets/arduino_uno_r3_board.jpg)
+
 Berikut posisi komponen utama pada papan Arduino Uno R3:
 
 ```text
@@ -108,6 +110,8 @@ Sebagian besar instruksi assembler pada arsitektur AVR membutuhkan 1 sampai 2 si
 ---
 
 ## 4. Fungsi Pin Header Arduino Uno R3
+
+![Diagram Pinout Lengkap Arduino Uno R3 dan ATmega328P](../assets/arduino_uno_atmega328p_pinout.svg)
 
 Papan Uno memiliki total 32 lubang pin header yang terbagi menjadi kelompok berikut:
 

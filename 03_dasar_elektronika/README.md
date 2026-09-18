@@ -27,6 +27,9 @@ $$P = V \times I$$
 ## 2. Memahami Komponen Hardware Kit
 
 ### 2.1 LED (Light Emitting Diode)
+
+![Anatomi LED 5mm](../assets/led_5mm_diagram.svg)
+
 LED adalah komponen semikonduktor yang memancarkan cahaya saat dialiri arus listrik searah. Berbeda dengan resistor, LED memiliki polaritas:
 * **Anoda (+)**: Kaki yang lebih panjang. Terhubung ke kutub positif tegangan.
 * **Katoda (-)**: Kaki yang lebih pendek. Di dalam badan plastik LED, elektrodanya lebih besar menyerupai bendera, dan tepi plastik di sisi katoda berbentuk pipih. Terhubung ke Ground.
@@ -91,6 +94,9 @@ Untuk mencegah floating, pin wajib diikat ke tegangan pasti menggunakan:
 ---
 
 ### 2.3 Modul Relay 5V
+
+![Struktur Internal Relay Elektromekanik](../assets/electromechanical_relay_internals.jpg)
+
 Relay adalah sakelar elektromekanik yang digerakkan oleh kumparan magnet. Relay memungkinkan sirkuit kecil bertegangan 5V DC pada Arduino untuk mengendalikan perangkat berdaya besar (misalnya lampu rumah 220V AC atau pompa air DC).
 
 ```text
@@ -133,6 +139,8 @@ Itulah alasan kita **wajib menggunakan Modul Relay** yang sudah dilengkapi trans
 ---
 
 ## 4. Cara Menggunakan Breadboard
+
+![Struktur Jalur Internal Breadboard](../assets/breadboard_internals.svg)
 
 Breadboard digunakan untuk merangkai komponen tanpa perlu menyolder:
 

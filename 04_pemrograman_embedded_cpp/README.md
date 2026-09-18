@@ -103,6 +103,8 @@ const uint8_t PIN_LED = 13;
 
 ## 4. Bahaya Objek `String` pada Mikrokontroler AVR
 
+![Blotcat forcing an oversized dynamic String into a fragile 2KB SRAM box causing heap fragmentation](../assets/blotcat_memory_trap.jpg)
+
 Di Arduino, Anda dapat menulis teks menggunakan kelas `String` seperti ini:
 
 ```cpp

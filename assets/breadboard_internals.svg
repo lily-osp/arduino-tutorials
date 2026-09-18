@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" width="200pt" height="550pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <pattern id="pat" width="10" height="10" patternUnits="userSpaceOnUse">
+    <circle cx="5" cy="5" r="2.5" fill="none" stroke="#000" stroke-width="2.25"/>
+  </pattern>
+  <rect x="13.5" y="12.5" width="227.5" height="662.5" fill="#fff" fill-opacity=".87" stroke="#000" stroke-width="3"/>
+  <g transform="translate(3.625,-62.5)">
+    <g transform="translate(-187.625,210)" fill="none" stroke="#000" stroke-width="2">
+      <path stroke="#f00" d="M235,231 V 511"/>
+      <path stroke="#f00" d="M235,-59 V 221"/>
+      <path stroke="#00f" d="M210,-59 V 221"/>
+      <path stroke="#00f" d="M210,231 V 511"/>
+      <path stroke="#f00" d="M412.75,231 V 511"/>
+      <path stroke="#f00" d="M412.75,-59 V 221"/>
+      <path stroke="#00f" d="M387.75,-59 V 221"/>
+      <path stroke="#00f" d="M387.75,231 V 511"/>
+      <rect x="302.69382" y="-59.5" width="17.126257" height="565.94489" fill="#000" fill-opacity="0.26543208" stroke-width="1"/>
+    </g>
+    <g fill="#000" stroke="#000" stroke-width="1" transform="translate(37 109.5)">
+      <circle r="15" fill-opacity=".21604937"/>
+      <circle r="11.9" fill-opacity=".21604937" stroke-width="1.2"/>
+      <circle r="5"/>
+      <g transform="translate(57.83333)">
+        <circle r="15" fill="#00f" fill-opacity=".60493828"/>
+        <circle r="11.9" fill="#00f" fill-opacity=".60493828" stroke-width="1.2"/>
+        <circle r="5"/>
+      </g>
+      <g transform="translate(115.6667)">
+        <circle r="15" fill="#00ac00" fill-opacity=".63580244"/>
+        <circle r="11.9" fill="#00ac00" fill-opacity=".63580244" stroke-width="1.2"/>
+        <circle r="5"/>
+      </g>
+      <g transform="translate(173.5)">
+        <circle r="15" fill="#db0000" fill-opacity=".87037036"/>
+        <circle r="11.9" fill="#db0000" fill-opacity=".87037036" stroke-width="1.2"/>
+        <circle r="5"/>
+      </g>
+    </g>
+    <g transform="translate(68.75 146)" font-family="Bitstream Vera Sans" font-size="12" text-anchor="middle">
+      <text>A</text>
+      <text x="10">B</text>
+      <text x="20">C</text>
+      <text x="30">D</text>
+      <text x="40">E</text>
+      <text x="70">F</text>
+      <text x="80">G</text>
+      <text x="90">H</text>
+      <text x="100">I</text>
+      <text x="110">J</text>
+    </g>
+    <g id="t" transform="translate(185 156.6) scale(.9 1)" font-family="Bitstream Vera Sans" font-size="8">
+      <text y="0">1</text>
+      <text y="10">2</text>
+      <text y="20">3</text>
+      <text y="30">4</text>
+      <text y="40">5</text>
+      <text y="50">6</text>
+      <text y="60">7</text>
+      <text y="70">8</text>
+      <text y="80">9</text>
+      <text y="90">10</text>
+      <text y="100">11</text>
+      <text y="110">12</text>
+      <text y="120">13</text>
+      <text y="130">14</text>
+      <text y="140">15</text>
+      <text y="150">16</text>
+      <text y="160">17</text>
+      <text y="170">18</text>
+      <text y="180">19</text>
+      <text y="190">20</text>
+      <text y="200">21</text>
+      <text y="210">22</text>
+      <text y="220">23</text>
+      <text y="230">24</text>
+      <text y="240">25</text>
+      <text y="250">26</text>
+      <text y="260">27</text>
+      <text y="270">28</text>
+      <text y="280">29</text>
+      <text y="290">30</text>
+      <text y="300">31</text>
+      <text y="310">32</text>
+      <text y="320">33</text>
+      <text y="330">34</text>
+      <text y="340">35</text>
+      <text y="350">36</text>
+      <text y="360">37</text>
+      <text y="370">38</text>
+      <text y="380">39</text>
+      <text y="390">40</text>
+      <text y="400">41</text>
+      <text y="410">42</text>
+      <text y="420">43</text>
+      <text y="430">44</text>
+      <text y="440">45</text>
+      <text y="450">46</text>
+      <text y="460">47</text>
+      <text y="470">48</text>
+      <text y="480">49</text>
+      <text y="490">50</text>
+      <text y="500">51</text>
+      <text y="510">52</text>
+      <text y="520">53</text>
+      <text y="530">54</text>
+      <text y="540">55</text>
+      <text y="550">56</text>
+      <text y="560">57</text>
+    </g>
+    <use xlink:href="#t" x="-122.5" text-anchor="end"/>
+  </g>
+  <g id="a" transform="translate(29.6 87.12)" fill="url(#pat)">
+    <path d="m0,0h20v50H0z m0,60h20v50H0z"/>
+    <path transform="translate(0 119)" d="m0,0h20v50H0z"/>
+    <path transform="translate(0 175)" d="m0,0h20v50H0z"/>
+    <path transform="translate(0 230)" d="m0,0h20v50H0z m0,60h20v50H0z"/>
+    <path transform="translate(0 349)" d="m0,0h20v50H0z"/>
+    <path transform="translate(0 405)" d="m0,0h20v50H0z"/>
+    <path transform="translate(0 460)" d="m0,0h20v50H0z m0,60h20v50H0z"/>
+  </g>
+  <use xlink:href="#a" x="177.75"/>
+  <path transform="translate(67.4 86.6)" fill="url(#pat)" d="m0,0h50v570H0z m70,0h50v570h-50z"/>
+</svg>

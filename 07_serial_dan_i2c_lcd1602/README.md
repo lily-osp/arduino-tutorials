@@ -16,6 +16,8 @@ Modul ini membahas dua metode komunikasi antarmuka data: pengiriman dan penerima
 
 ## 2. Mengapa Memakai Backpack I2C pada LCD 1602?
 
+![Modul Layar LCD 1602](../assets/lcd1602_display.jpg)
+
 LCD karakter standar 1602 (16 karakter $\times$ 2 baris) berbasis chip Hitachi HD44780 aslinya membutuhkan minimal 6 hingga 10 pin GPIO mikrokontroler untuk beroperasi dalam mode paralel (RS, EN, D4, D5, D6, D7, dll.).
 
 Modul backpack hitam yang tersolder di belakang LCD menggunakan chip **PCF8574** (8-bit I/O expander). Chip ini mengubah antarmuka paralel tersebut menjadi protokol **I2C (Inter-Integrated Circuit)**, sehingga kita hanya membutuhkan **2 pin komunikasi data**:
